@@ -1,0 +1,42 @@
+@import "./common/fb.css";
+@import "./common/yt.css";
+@import "./common/layout/slider.css";
+@import "./common/layout/button.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #4F4F4F;
+  /* letter-spacing: 0.03em; */
+}
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+.page_flex {
+  display: flex;
+  /* overflow: hidden; */
+}
+.slider_all {
+    display: flex;
+    transform: translateX(0%);
+    transition: transform 0.8s ease-in-out 0s;
+    /* width: 100%;
+    height: 100%;
+    background-image: url("img/Group1.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    position: relative; */
+}
+.page_both{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/alice_youtube_taste.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: red; */
+}

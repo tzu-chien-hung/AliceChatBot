@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALICE chatbox</title>
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+    <div>
+        <div class="page_flex">
+            <div class="slider_main_img">
+                <div id="case_slider_all_container" class="slider_all">
+                    <div class="page_both">
+                        <div class="yt">
+                            <div class="yt_box box2_2">
+                                <div class="yt_aside_video">
+                                    <div class="yt_aside">
+                                        <div class="yt_aside_img"><img class="yt_aside_img_img"
+                                                src="./img/alice_logo.png" alt=""></div>
+                                        <div class="yt_aside_title">
+                                            <div class="yt_aside_title_img_div"><img class="yt_aside_title_img"
+                                                    src="./img/yt_logo.png" alt=""></div>
+                                            <div class="yt_aside_title_span">體驗</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="YouTube_block_bg">
+                                            <div class="YouTube_block" id="player"></div>
+                                            <div class="YouTube_block_txt">
+                                                【勸敗不解室】品牌識別搶答賽｜Windows開機聽起來根本一樣R｜第一屆生活智慧王｜勸敗家TrendBuy
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="yt_hint_box yt_hint_box_1">
+                                                <div class="yt_hint_img_div"><img class="yt_hint_img"
+                                                        src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="yt_hint_box_content">
+                                                    <div>點擊右下角</div>
+                                                    <div class="yt_hint_box_content_img_div"><img
+                                                            class="yt_hint_box_content_img" src="./img/massage.svg"
+                                                            alt=""></div>
+                                                    <div>，並進行登入</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="yt_hint_box yt_hint_box_2">
+                                                <div class="yt_hint_img_div"><img class="yt_hint_img"
+                                                        src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="yt_hint_box_content yt_hint_box_content_2">
+                                                    您可以試著輸入以下關鍵字進行體驗： <br>
+                                                    如果自家擁有電商網站，想要透過ALICE Chatbot收集會員數據，請輸入 <a href="#">#網站銷售</a><br>
+                                                    如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <a href="#">#對話訂單</a><br>
+                                                    如果想要收集用戶意見，並透過專人接洽訂購事宜，請輸入 <a href="#">#專人服務</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="yt_message">
+                                        <div class="yt_message_all">
+                                            <div class="yt_message_content">
+                                                <div class="yt_message_img_div"><img class="yt_message_img"
+                                                        src="./img/massage.svg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider_arrow slider_arrow_right" id="slider_arrow_right"
+                                    onclick="stopVideo()">
+                                    <div><img class="slider_img_icon" src="./img/tab_facebook.svg" alt=""></div>
+                                    <div class="slider_img_txt_div"><img class="slider_img_txt" src="./img/fb_logo.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_both">
+                        <div class="fb">
+                            <div class="fb_box">
+                                <!-- tab -->
+                                <div class="slider_arrow slider_arrow_left" id="slider_arrow_left">
+                                    <div><img class="slider_img_icon" src="./img/tab_youtube.svg" alt=""></div>
+                                    <div class="slider_img_txt_div_yt"><img class="slider_img_txt_yt"
+                                            src="./img/yt_logo.png" alt=""></div>
+                                </div><!-- tab -->
+                                <div>
+                                    <div class="fb_box_content">
+                                        <div class="fb_nav_1">
+                                            <div class="fb_nav_1_all">
+                                                <div class="fb_nav_1_logo">
+                                                    <img class="fb_nav_1_logo_icon" src="./img/facebook_logo.svg"
+                                                        alt="">
+                                                </div>
+                                                <div class="fb_nav_1_search_bar">
+                                                    <div class="fb_nav_1_search_bar_img"><img
+                                                            src="./img/icon_search.svg" alt=""></div>
+                                                    <div class="fb_nav_1_search_bar_txt">搜尋Facebook</div>
+                                                </div>
+                                                <div class="fb_nav_1_menu_icon">
+                                                    <img src="./img/icon_home.svg" alt="">
+                                                    <img src="./img/icon_video.svg" alt="">
+                                                    <img src="./img/icon_shop.svg" alt="">
+                                                    <img src="./img/icon_group.svg" alt="">
+                                                    <img src="./img/icon_game.svg" alt="">
+                                                </div>
+                                                <div class="fb_nav_1_user">
+                                                    <div class="fb_nav_1_user_icon"><img src="./img/peter_avatar.png"
+                                                            alt=""></div>
+                                                    <div class="fb_nav_1_user_txt">Alice</div>
+                                                </div>
+                                                <div class="fb_nav_1_end">
+                                                    <div class="fb_nav_1_end_div"><img src="./img/icon_function.svg"
+                                                            alt=""></div>
+                                                    <div class="fb_nav_1_end_div"><img
+                                                            src="./img/icon_massage_black.svg" alt=""></div>
+                                                    <div class="fb_nav_1_end_div"><img src="./img/icon_bell.svg" alt="">
+                                                    </div>
+                                                    <div class="fb_nav_1_end_div"><img src="./img/icon_polygon.svg"
+                                                            alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fb_nav_2">
+                                            <div class="fb_nav_2_all">
+                                                <div class="fb_nav_2_user">
+                                                    <div class="fb_nav_2_img"><img src="./img/prodigal.jpg" alt="">
+                                                    </div>
+                                                    <div class="fb_nav_2_name">勸敗家TrendBuy</div>
+                                                </div>
+                                                <div class="fb_nav_2_btn_all">
+                                                    <div class="fb_nav_2_btn fb_nav_2_btn1">
+                                                        <div class="fb_nav_2_btn_img"><img
+                                                                src="./img/icon_massage_white.svg" alt=""></div>
+                                                        <div class="fb_nav_2_btn_txt">發送訊息</div>
+                                                    </div>
+                                                    <div class="fb_nav_2_btn fb_nav_2_btn2">
+                                                        <div><img src="./img/icon_like_blue.svg" alt=""></div>
+                                                        <div class="fb_nav_2_btn_txt fb_nav_2_btn_txt2">讚</div>
+                                                    </div>
+                                                    <div class="fb_nav_2_btn fb_nav_2_btn3">
+                                                        <div class="fb_nav_2_btn3_img"><img
+                                                                src="./img/icon_search_black.svg" alt=""></div>
+                                                    </div>
+                                                    <div class="fb_nav_2_btn fb_nav_2_btn3">
+                                                        <div class="fb_nav_2_btn3_img2"><img src="./img/icon_more.svg"
+                                                                alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fb_content_all">
+                                            <div class="fb_content">
+                                                <div class="fb_content_r">
+                                                    <div class="fb_content_r_all">
+                                                        <div class="fb_content_r_title">
+                                                            <div class="fb_content_r_title1">關於</div>
+                                                            <div class="fb_content_r_title2">查看全部</div>
+                                                        </div>
+                                                        <div class="fb_content_r_about_all">
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_introduce.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt">敗家有理，歡樂促購！ <br>
+                                                                    結合網路互動特性與傳統購物台節目優勢，勸敗家團隊致力於讓商品與社群粉絲的溝通，以各種創新幽默的媒體形式與內容來實現。
+                                                                </div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_like.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt">580人說讚</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_track.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt">604人在追蹤</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_world.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt fb_blue">
+                                                                    https://www.sales-<br>
+                                                                    frontier.com/video.php</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_phone.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt">02 2711 8835</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_massage.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt fb_blue">發送訊息</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_mail.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt fb_blue">
+                                                                    service@sfrontier.biz</div>
+                                                            </div>
+                                                            <div class="fb_content_r_about">
+                                                                <div class="fb_content_r_about_icon"><img
+                                                                        src="./img/icon_file.svg" alt=""></div>
+                                                                <div class="fb_content_r_about_txt fb_blue ">行銷代理商 ·
+                                                                    購物服務 · 廣播媒體製作公司</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fb_content_l">
+                                                    <div class="fb_content_l_all">
+                                                        <div class="fb_content_l_title">
+                                                            <div class="fb_content_l_title_all">
+                                                                <div class="fb_content_l_title_img"><img
+                                                                        src="./img/prodigal.jpg" alt=""></div>
+                                                                <div class="fb_content_l_title_txt">
+                                                                    <div class="fb_content_l_title_txt_name">勸敗家TrendBuy
+                                                                    </div>
+                                                                    <div class="fb_content_l_title_txt_flex">
+                                                                        <div class="fb_content_l_title_txt_date">1月21日
+                                                                        </div>
+                                                                        <div class="fb_content_l_title_txt_icon"><img
+                                                                                src="./img/group.svg" alt=""></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <svg width="18" height="5" viewBox="0 0 18 5"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="2.07692" cy="2.07692" r="2.07692"
+                                                                        fill="#878787" />
+                                                                    <circle cx="8.9999" cy="2.07692" r="2.07692"
+                                                                        fill="#878787" />
+                                                                    <circle cx="15.9232" cy="2.07692" r="2.07692"
+                                                                        fill="#878787" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fb_content_l_word">
+                                                            【勸敗不解室】#品牌識別搶答賽
+                                                            - - - - -
+                                                            這些生活中常見常聽到的品牌識別👀
+                                                            在你們的大腦肯定都有印象❗
+                                                            但也容易把顏色相似的搞混……顯示更多
+                                                        </div>
+                                                        <div class="fb_video">
+                                                            <iframe width="613.09" height="343.83"
+                                                                src="https://www.youtube.com/embed/QJhG_17DpRU"
+                                                                title="YouTube video player" frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="fb_content_l_bottom">
+                                                            <div class="fb_content_l_bottom_1">
+                                                                <div class="fb_content_l_bottom_1_icon"><img
+                                                                        src="./img/icon_like_massage.svg" alt=""></div>
+                                                                <div class="fb_content_l_bottom_1_num">300</div>
+                                                            </div>
+                                                            <div class="fb_content_l_line"></div>
+                                                            <div class="fb_content_l_bottom_2">
+                                                                <div class="fb_content_l_bottom_2_group">
+                                                                    <div class="fb_content_l_bottom_2_icon">
+                                                                        <img src="./img/icon_like_white.svg" alt="">
+                                                                    </div>
+                                                                    <div class="fb_content_l_bottom_2_txt">讚</div>
+                                                                </div>
+                                                                <div class="fb_content_l_bottom_2_group">
+                                                                    <div class="fb_content_l_bottom_2_icon">
+                                                                        <img src="./img/icon_massages.svg" alt="">
+                                                                    </div>
+                                                                    <div class="fb_content_l_bottom_2_txt">留言</div>
+                                                                </div>
+                                                                <div class="fb_content_l_bottom_2_group">
+                                                                    <div class="fb_content_l_bottom_2_icon">
+                                                                        <img src="./img/icon_share.svg" alt="">
+                                                                    </div>
+                                                                    <div class="fb_content_l_bottom_2_txt">分享</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fb_content_l_line"></div>
+                                                            <div class="fb_content_l_bottom_3">
+                                                                <div class="fb_content_l_bottom_3_icon"><img
+                                                                        src="./img/avatar_line.svg" alt=""></div>
+                                                                <div class="fb_content_l_bottom_3_content">
+                                                                    <div class="fb_content_l_bottom_3_content_txt">
+                                                                        留言......</div>
+                                                                    <div class="fb_content_l_bottom_3_content_icon">
+                                                                        <img src="./img/icon_emoji.svg" alt="">
+                                                                        <img src="./img/icon_camera.svg" alt="">
+                                                                        <img src="./img/icon_gif.svg" alt="">
+                                                                        <img src="./img/icon_sticker.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fb_pop_box">
+                                            <div class="fb_pop_box_bg">
+                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="fb_pop_box_txt">請在粉絲團貼文中留言『 <span class="fb_blue">#+1</span> 』</div>
+                                                <div class="fb_pop_box_btn">下一步</div>
+                                            </div>
+                                            <div class="fb_pop_box_bg2">
+                                                <div class="fb_pop_box_img fb_pop_box_img2"><img src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="fb_pop_box_txt2">您可以試著輸入以下關鍵字進行體驗： <br>
+                                                    如果自家擁有電商網站，想要透過ALICE Chatbot收集會員數據，請輸入 <span class="fb_blue">#網站銷售</span><br>
+                                                    如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <span class="fb_blue">#對話訂單</span><br>
+                                                    如果想要收集用戶意見，並透過專人接洽訂購事宜，請輸入 <span class="fb_blue">#專人服務</span>
+                                                    </div>
+                                                <div class="fb_pop_box_btn">下一步</div>
+                                            </div>
+                                            <div class="fb_pop_box_bg fb_pop_box_bg3">
+                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="fb_pop_box_txt">立即前往 Facebook 體驗</div>
+                                                <div class="fb_pop_box_btn">確認</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/page.js"></script>
+</body>
+
+</html>
