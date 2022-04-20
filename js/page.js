@@ -4,13 +4,14 @@ let index = 0;
 let left_index = 1;
 let arrow_left = document.getElementById('slider_arrow_left');
 let arrow_right = document.getElementById('slider_arrow_right');
+// const yt_messager = document.getElementById('yt_messager');
 // console.log(arrow_left)
-index++;
-ul.style.transform = `translateX(${(-index * 50)}%)`;
-if ((index) % (li.length) == 0) {
-    ul.style.left = left_index * 500 + "%";
-    left_index++;
-}
+// index++;
+// ul.style.transform = `translateX(${(-index * 50)}%)`;
+// if ((index) % (li.length) == 0) {
+//     ul.style.left = left_index * 500 + "%";
+//     left_index++;
+// }
 arrow_left.addEventListener('click', function () {
     index--;
     ul.style.transform = `translateX(${(-index * 50)}%)`;
@@ -27,6 +28,7 @@ arrow_right.addEventListener('click', function () {
         ul.style.left = left_index * 500 + "%";
         left_index++;
     }
+    // yt_messager.style.display = none;
 });
 
 // ==========================  yt =============================
