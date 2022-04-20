@@ -61,12 +61,42 @@
                                         </div>
                                     </div>
                                     <div class="yt_message">
-                                        <div class="yt_message_all">
+                                        <!-- <div class="yt_message_all">
                                             <div class="yt_message_content">
                                                 <div class="yt_message_img_div"><img class="yt_message_img"
                                                         src="./img/massage.svg" alt=""></div>
                                             </div>
+                                        </div> -->
+                                        <!-- Messenger 洽談外掛程式 Code -->
+                                        <div id="fb-root"></div>
+
+                                        <!-- Your 洽談外掛程式 code -->
+                                        <div id="fb-customer-chat" class="fb-customerchat">
                                         </div>
+
+                                        <script>
+                                            var chatbox = document.getElementById('fb-customer-chat');
+                                            chatbox.setAttribute("page_id", "104327762263702");
+                                            chatbox.setAttribute("attribution", "biz_inbox");
+                                        </script>
+
+                                        <!-- Your SDK code -->
+                                        <script>
+                                            window.fbAsyncInit = function () {
+                                                FB.init({
+                                                    xfbml: true,
+                                                    version: 'v13.0'
+                                                });
+                                            };
+
+                                            (function (d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                if (d.getElementById(id)) return;
+                                                js = d.createElement(s); js.id = id;
+                                                js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="slider_arrow slider_arrow_right" id="slider_arrow_right"
@@ -303,21 +333,27 @@
                                         </div>
                                         <div class="fb_pop_box">
                                             <div class="fb_pop_box_bg">
-                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt=""></div>
-                                                <div class="fb_pop_box_txt">請在粉絲團貼文中留言『 <span class="fb_blue">#+1</span> 』</div>
+                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt="">
+                                                </div>
+                                                <div class="fb_pop_box_txt">請在粉絲團貼文中留言『 <span class="fb_blue">#+1</span>
+                                                    』</div>
                                                 <div class="fb_pop_box_btn">下一步</div>
                                             </div>
                                             <div class="fb_pop_box_bg2">
-                                                <div class="fb_pop_box_img fb_pop_box_img2"><img src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="fb_pop_box_img fb_pop_box_img2"><img
+                                                        src="./img/peter_avatar.png" alt=""></div>
                                                 <div class="fb_pop_box_txt2">您可以試著輸入以下關鍵字進行體驗： <br>
-                                                    如果自家擁有電商網站，想要透過ALICE Chatbot收集會員數據，請輸入 <span class="fb_blue">#網站銷售</span><br>
-                                                    如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <span class="fb_blue">#對話訂單</span><br>
+                                                    如果自家擁有電商網站，想要透過ALICE Chatbot收集會員數據，請輸入 <span
+                                                        class="fb_blue">#網站銷售</span><br>
+                                                    如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <span
+                                                        class="fb_blue">#對話訂單</span><br>
                                                     如果想要收集用戶意見，並透過專人接洽訂購事宜，請輸入 <span class="fb_blue">#專人服務</span>
-                                                    </div>
+                                                </div>
                                                 <div class="fb_pop_box_btn">下一步</div>
                                             </div>
                                             <div class="fb_pop_box_bg fb_pop_box_bg3">
-                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt=""></div>
+                                                <div class="fb_pop_box_img"><img src="./img/peter_avatar.png" alt="">
+                                                </div>
                                                 <div class="fb_pop_box_txt">立即前往 Facebook 體驗</div>
                                                 <div class="fb_pop_box_btn">確認</div>
                                             </div>
