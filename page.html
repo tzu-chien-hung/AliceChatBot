@@ -331,84 +331,53 @@
 
         </div>
     </div>
-    <div id="yt_messager">
-        <!-- <div class="yt_message_all">
-            <div class="yt_message_content">
-                <div class="yt_message_img_div"><img class="yt_message_img"
-                        src="./img/massage.svg" alt=""></div>
-            </div>
-        </div> -->
-        <!-- Messenger 洽談外掛程式 Code -->
-        <div id="fb-root" class=" fb_reset">
-            <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-                <div></div>
-            </div>
-            <div class=" fb_iframe_widget fb_invisible_flow"
-                fb-iframe-plugin-query="app_id=&amp;attribution=biz_inbox&amp;container_width=1920&amp;current_url=https%3A%2F%2Ftzu-chien-hung.github.io%2FAliceChatBox%2Fpage.html&amp;has_explicit_interaction=1&amp;is_loaded_by_facade=true&amp;local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22not-hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22shouldShowLoginPage%22%3Afalse%2C%22euit%22%3A1650424536053%7D&amp;locale=zh_TW&amp;log_id=337ba881-bda9-4c2c-b246-bb743d79f071&amp;page_id=104327762263702&amp;request_time=1650424849391&amp;sdk=joey">
-                <span style="vertical-align: bottom; width: 1000px; height: 0px;">
-                    <iframe name="f22abdd9b2f706c" width="1000px" height="1000px" data-testid="dialog_iframe" title=""
-                        frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
-                        allow="encrypted-media"
-                        src="https://www.facebook.com/v13.0/plugins/customerchat.php?app_id=&amp;attribution=biz_inbox&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df522f35488fa7%26domain%3Dtzu-chien-hung.github.io%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Ftzu-chien-hung.github.io%252Fff5c8b77a98154%26relation%3Dparent.parent&amp;container_width=1920&amp;current_url=https%3A%2F%2Ftzu-chien-hung.github.io%2FAliceChatBox%2Fpage.html&amp;has_explicit_interaction=1&amp;is_loaded_by_facade=true&amp;local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22not-hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22shouldShowLoginPage%22%3Afalse%2C%22euit%22%3A1650424536053%7D&amp;locale=zh_TW&amp;log_id=337ba881-bda9-4c2c-b246-bb743d79f071&amp;page_id=104327762263702&amp;request_time=1650424849391&amp;sdk=joey"
-                        style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: none; width: 399px; bottom: 84px; max-height: calc(100% - 84px); right: 105px; visibility: visible; height: 472px;" class="">
-                    </iframe>
-                </span>
-            </div>
-            <div class="fb_dialog  fb_dialog_advanced" alignment="right" desktop_bottom_spacing="24"
-                style="display: inline;">
-                <div class="fb_dialog_content">
-                    <iframe name="blank_f22abdd9b2f706c" width="60px" tabindex="-1" data-testid="bubble_iframe"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
-                        allow="encrypted-media" src="https://www.facebook.com/v13.0/plugins/customer_chat/bubble"
-                        style="background: none; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 100px; top: auto; width: 60px; z-index: 2147483644;">
-                    </iframe>
-                    <iframe name="availabilityStatus_f22abdd9b2f706c" tabindex="-1"
-                        data-testid="availabilityStatus_iframe" frameborder="0" allowtransparency="true"
-                        allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                        src="https://www.facebook.com/v13.0/plugins/customer_chat/bubble"
-                        style="border-radius: 50%; bottom: 21.5px; height: 15px; position: fixed; right: 24px; width: 15px; z-index: 2147483646;">
-                    </iframe>
-                    <iframe name="unread_f22abdd9b2f706c" tabindex="-1" data-testid="unread_iframe" frameborder="0"
-                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                        src="https://www.facebook.com/v13.0/plugins/customer_chat/bubble"
-                        style="background: none; border-radius: 4pt; bottom: 68px; height: 24px; position: fixed; right: 22px; width: 20px; z-index: 2147483645;">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <!-- Your 洽談外掛程式 code -->
-
-
-        <script type="text/javascript" id="www-widgetapi-script"
-            src="https://www.youtube.com/s/player/19eb72e4/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script id="facebook-jssdk" src="https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js"></script>
-        <script>
-            var chatbox = document.getElementById('fb-customer-chat');
-            chatbox.setAttribute("page_id", "104327762263702");
-            chatbox.setAttribute("attribution", "biz_inbox");
-        </script>
-
-        <!-- Your SDK code -->
-        <script>
-            window.fbAsyncInit = function () {
-                FB.init({
-                    xfbml: true,
-                    version: 'v13.0'
-                });
-            };
-
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-    </div>
     <script src="./js/page.js"></script>
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root" class=" fb_reset">
+        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+            <div></div>
+        </div>
+        <div id="fb-customer-chat" class="fb-customerchat" page_id="104327762263702" attribution="biz_inbox"
+            fb-xfbml-state="rendered"
+            fb-iframe-plugin-query="app_id=&amp;attribution=biz_inbox&amp;current_url=http%3A%2F%2F127.0.0.1%3A5500%2Fpage.html&amp;is_loaded_by_facade=true&amp;locale=zh_TW&amp;log_id=fc32a113-5814-469c-8a5f-b5236b4a8bcc&amp;page_id=104327762263702&amp;request_time=1650427679515&amp;sdk=joey">
+            <div id="f6897e8fb9401c"></div>
+        </div>
+        <div class=" fb_iframe_widget fb_invisible_flow"
+            fb-iframe-plugin-query="app_id=&amp;attribution=biz_inbox&amp;container_width=2110&amp;current_url=http%3A%2F%2F127.0.0.1%3A5500%2Fpage.html&amp;is_loaded_by_facade=true&amp;locale=zh_TW&amp;log_id=fc32a113-5814-469c-8a5f-b5236b4a8bcc&amp;page_id=104327762263702&amp;request_time=1650427685373&amp;sdk=joey">
+            <span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f3a47d12de41794"
+                    width="1000px" height="1000px" data-testid="fb:customerchat Facebook Social Plugin" title=""
+                    frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                    allow="encrypted-media"
+                    src="https://www.facebook.com/v13.0/plugins/customerchat.php?app_id=&amp;attribution=biz_inbox&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2a3cb238e8289c%26domain%3D127.0.0.1%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A5500%252Ff3d92ae2720213c%26relation%3Dparent.parent&amp;container_width=2110&amp;current_url=http%3A%2F%2F127.0.0.1%3A5500%2Fpage.html&amp;is_loaded_by_facade=true&amp;locale=zh_TW&amp;log_id=fc32a113-5814-469c-8a5f-b5236b4a8bcc&amp;page_id=104327762263702&amp;request_time=1650427685372&amp;sdk=joey"
+                    style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div>
+    </div>
+    <script type="text/javascript" id="www-widgetapi-script"
+        src="https://www.youtube.com/s/player/19eb72e4/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script id="facebook-jssdk" src="https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js"></script>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        console.log(chatbox)
+        chatbox.setAttribute("page_id", "104327762263702");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </body>
 
 </html>
