@@ -20,6 +20,7 @@ arrow_left.addEventListener('click', function () {
         ul.style.left = (left_index - 2) * 500 + "%";
         left_index--;
     };
+    fb_message.style.display= 'block';
 });
 // console.log(fb_message);
 arrow_right.addEventListener('click', function () {
@@ -28,7 +29,7 @@ arrow_right.addEventListener('click', function () {
     if ((index) % (li.length) == 0) {
         ul.style.left = left_index * 500 + "%";
         left_index++;
-    }
+    };
     fb_message.style.display= 'none';
 });
 
