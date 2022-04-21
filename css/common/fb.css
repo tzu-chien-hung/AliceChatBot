@@ -536,6 +536,14 @@
   .fb_nav_1_end {
     margin: auto 56px;
   }
+  .fb_nav_1_end_div img {
+    width: 20px;
+    height: 20px;
+  }
+  .fb_nav_1_end_div:last-child img {
+    width: 14px;
+    height: 14px;
+  }
   .fb_content {
     width: 920px;
     margin: 1;
