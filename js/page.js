@@ -1,11 +1,12 @@
 const ul = document.getElementById('case_slider_all_container');
 const li = document.querySelectorAll('.slider_big_img');
+const fb_message = document.getElementById('fb-root');
+console.log(fb_message);
 let index = 0;
 let left_index = 1;
 let arrow_left = document.getElementById('slider_arrow_left');
 let arrow_right = document.getElementById('slider_arrow_right');
-// const yt_messager = document.getElementById('yt_messager');
-// console.log(arrow_left)
+
 // index++;
 // ul.style.transform = `translateX(${(-index * 50)}%)`;
 // if ((index) % (li.length) == 0) {
@@ -18,9 +19,9 @@ arrow_left.addEventListener('click', function () {
     if ((index - 4) % (li.length) == 0) {
         ul.style.left = (left_index - 2) * 500 + "%";
         left_index--;
-    }
+    };
 });
-
+// console.log(fb_message);
 arrow_right.addEventListener('click', function () {
     index++;
     ul.style.transform = `translateX(${(-index * 50)}%)`;
@@ -28,7 +29,7 @@ arrow_right.addEventListener('click', function () {
         ul.style.left = left_index * 500 + "%";
         left_index++;
     }
-    // yt_messager.style.display = none;
+    fb_message.style.display= 'none';
 });
 
 // ==========================  yt =============================
@@ -48,7 +49,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '535.91',
     width: '900',
-    videoId: 'M7lc1UVf-VE',
+    videoId: 'gId9xFyID0o',
     events: {
       'onReady': onPlayerReady,
       // 'onStateChange': onPlayerStateChange

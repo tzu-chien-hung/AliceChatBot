@@ -8,15 +8,17 @@
     <title>ALICE chatbox</title>
     <link rel="stylesheet" href="./css/page.css">
     <style>
-        .fb_dialog .fb_dialog_content iframe{
+        .fb_dialog .fb_dialog_content iframe {
             right: 80px !important;
             bottom: 135px !important;
         }
-        .fb_dialog_advanced .fb_dialog_content iframe{
+
+        .fb_dialog_advanced .fb_dialog_content iframe {
             right: 80px !important;
             bottom: 135px !important;
         }
-        .fb_invisible_flow span iframe{
+
+        .fb_invisible_flow span iframe {
             right: 85px !important;
             bottom: 190px !important;
         }
@@ -253,12 +255,12 @@
                                                             在你們的大腦肯定都有印象❗
                                                             但也容易把顏色相似的搞混……顯示更多
                                                         </div>
-                                                        <div class="fb_video">
-                                                            <iframe width="613.09" height="343.83"
-                                                                src="https://www.youtube.com/embed/QJhG_17DpRU"
+                                                        <div class="fb_video"><iframe width="613.09" height="343.83"
+                                                                src="https://www.youtube.com/embed/gId9xFyID0o"
                                                                 title="YouTube video player" frameborder="0"
                                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                 allowfullscreen></iframe>
+
                                                         </div>
                                                         <div class="fb_content_l_bottom">
                                                             <div class="fb_content_l_bottom_1">
@@ -346,9 +348,9 @@
 
         </div>
     </div>
-    <script src="./js/page.js"></script>
+
     <!-- Messenger 洽談外掛程式 Code -->
-    <div class="fb_message">
+    <div class="fb_message" id="fb_message">
         <div id="fb-root" class=" fb_reset">
             <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
                 <div></div>
@@ -375,7 +377,7 @@
     <script id="facebook-jssdk" src="https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js"></script>
     <script>
         var chatbox = document.getElementById('fb-customer-chat');
-        console.log(chatbox)
+        // console.log(chatbox);
         chatbox.setAttribute("page_id", "104327762263702");
         chatbox.setAttribute("attribution", "biz_inbox");
     </script>
@@ -395,7 +397,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <script src="./js/page.js"></script>
 </body>
 
 </html>
