@@ -1,17 +1,17 @@
 .YouTube_block_bg {
   width: 950px;
-  height: 700px;
-  margin-top: 34px;
+  /* height: 630px; */
+  margin-top:25px;
   background: #ffffff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .YouTube_block {
-  padding: 33px 25px 20px 25px;
+  padding: 25px 25px 10px 25px;
 }
 .YouTube_block_txt {
-  padding: 0px 25px;
-  font-size: 24px;
+  padding: 0px 25px 10px 25px;
+  font-size: 22px;
   font-weight: 500;
   color: #262938;
 }
@@ -22,9 +22,9 @@
   display: flex;
 }
 .yt_aside {
-  width: 17%;
-  margin-top: 34px;
-  margin-right: 34px;
+  width: 183px;
+  margin-top: 25px;
+  margin-left: 34px;
 }
 .yt_aside_img {
   width: 183px;
@@ -60,7 +60,8 @@
 }
 .yt_aside_video {
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
+  /* margin: 0 auto; */
 }
 .box2_2 {
   /* margin: 0 auto;
@@ -77,8 +78,8 @@
 
 .yt_hint_box {
   display: flex;
-  display: none;
-  height: 150px;
+  /* display: none; */
+  height: 100px;
   width: 950px;
   background: rgba(255, 255, 255, 0.8);
   border: 3px solid rgba(130, 130, 130, 0.8);
@@ -86,12 +87,14 @@
   border-radius: 20px;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-.yt_hint_box_1{
-    display: flex;
+.yt_hint_box_1 {
+  display: flex;
+  display: none;
 }
-.yt_hint_box_2{
-    height: 200px;
+.yt_hint_box_2 {
+  height: 180px;
 }
 .yt_hint_img_div {
   width: 80px;
@@ -110,34 +113,40 @@
   align-items: center;
   letter-spacing: 0.03em;
 }
-.yt_hint_box_content_2{
-    display: block;
-    font-size: 20px;
+.yt_hint_box_content_2 {
+  display: block;
+  font-size: 20px;
 }
-.yt_hint_box_content_img_div{
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-    margin-right: 12px;
+.yt_hint_box_content_img_div {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 12px;
 }
-.yt_hint_box_content_img{
-    width: 100%;
+.yt_hint_box_content_img {
+  width: 100%;
 }
-.yt_message{
-    height: 100%;
+.yt_message {
+  height: 100%;
 }
-.yt_message_all{
-    height: 100%;
+.yt_message_all {
+  height: 100%;
 }
-.yt_message_content{
-    height: 100%;
+.yt_message_content {
+  height: 100%;
 }
-.yt_message_img_div{
-    width: 100px;
-    height: 100px;
-    margin-left: 47px;
-    margin-top: 780px;
+.yt_message_img_div {
+  width: 100px;
+  height: 100px;
+  margin-left: 47px;
+  margin-top: 780px;
 }
-.yt_message_img{
-    width: 100%;
+.yt_message_img {
+  width: 100%;
+}
+.yt_main {
+  width: calc(100vw - 297px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -8,11 +8,11 @@
     <title>ALICE chatbox</title>
     <link rel="stylesheet" href="./css/page.css">
     <style>
-        .fb_message{
-            position: relative;
-            border: 1px solid red;
-            margin-right: 100px;
-            height: 100%;
+        .fb_dialog_content {
+            right: 80px !important;
+        }
+        .fb_invisible_flow span iframe{
+            right: 85px !important;
         }
     </style>
 </head>
@@ -35,11 +35,11 @@
                                             <div class="yt_aside_title_span">體驗</div>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="yt_main">
                                         <div class="YouTube_block_bg">
                                             <div class="YouTube_block" id="player"></div>
                                             <div class="YouTube_block_txt">
-                                                【勸敗不解室】品牌識別搶答賽｜Windows開機聽起來根本一樣R｜第一屆生活智慧王｜勸敗家TrendBuy
+                                                【勸敗開箱趣】好貨不私藏，九分鐘一次看完｜七月超商聯名冰品開箱！｜勸敗家TrendBuy
                                             </div>
                                         </div>
                                         <div>
@@ -94,12 +94,13 @@
                                                 <div class="fb_nav_1_logo">
                                                     <img class="fb_nav_1_logo_icon" src="./img/facebook_logo.svg"
                                                         alt="">
+                                                    <div class="fb_nav_1_search_bar">
+                                                        <div class="fb_nav_1_search_bar_img"><img
+                                                                src="./img/icon_search.svg" alt=""></div>
+                                                        <div class="fb_nav_1_search_bar_txt">搜尋Facebook</div>
+                                                    </div>
                                                 </div>
-                                                <div class="fb_nav_1_search_bar">
-                                                    <div class="fb_nav_1_search_bar_img"><img
-                                                            src="./img/icon_search.svg" alt=""></div>
-                                                    <div class="fb_nav_1_search_bar_txt">搜尋Facebook</div>
-                                                </div>
+
                                                 <div class="fb_nav_1_menu_icon">
                                                     <img src="./img/icon_home.svg" alt="">
                                                     <img src="./img/icon_video.svg" alt="">
@@ -107,12 +108,13 @@
                                                     <img src="./img/icon_group.svg" alt="">
                                                     <img src="./img/icon_game.svg" alt="">
                                                 </div>
-                                                <div class="fb_nav_1_user">
-                                                    <div class="fb_nav_1_user_icon"><img src="./img/peter_avatar.png"
-                                                            alt=""></div>
-                                                    <div class="fb_nav_1_user_txt">Alice</div>
-                                                </div>
+
                                                 <div class="fb_nav_1_end">
+                                                    <div class="fb_nav_1_user">
+                                                        <div class="fb_nav_1_user_icon"><img
+                                                                src="./img/peter_avatar.png" alt=""></div>
+                                                        <div class="fb_nav_1_user_txt">Alice</div>
+                                                    </div>
                                                     <div class="fb_nav_1_end_div"><img src="./img/icon_function.svg"
                                                             alt=""></div>
                                                     <div class="fb_nav_1_end_div"><img
@@ -124,7 +126,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="fb_nav_2">
+                                        <!-- <div class="fb_nav_2">
                                             <div class="fb_nav_2_all">
                                                 <div class="fb_nav_2_user">
                                                     <div class="fb_nav_2_img"><img src="./img/prodigal.jpg" alt="">
@@ -151,7 +153,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="fb_content_all">
                                             <div class="fb_content">
                                                 <div class="fb_content_r">
@@ -182,8 +184,7 @@
                                                                 <div class="fb_content_r_about_icon"><img
                                                                         src="./img/icon_world.svg" alt=""></div>
                                                                 <div class="fb_content_r_about_txt fb_blue">
-                                                                    https://www.sales-<br>
-                                                                    frontier.com/video.php</div>
+                                                                    https://www.sales-frontier.com/video.php</div>
                                                             </div>
                                                             <div class="fb_content_r_about">
                                                                 <div class="fb_content_r_about_icon"><img
@@ -204,7 +205,7 @@
                                                             <div class="fb_content_r_about">
                                                                 <div class="fb_content_r_about_icon"><img
                                                                         src="./img/icon_file.svg" alt=""></div>
-                                                                <div class="fb_content_r_about_txt fb_blue ">行銷代理商 ·
+                                                                <div class="fb_content_r_about_txt1 fb_blue ">行銷代理商 ·
                                                                     購物服務 · 廣播媒體製作公司</div>
                                                             </div>
                                                         </div>

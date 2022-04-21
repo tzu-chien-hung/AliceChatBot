@@ -16,7 +16,7 @@ body {
 }
 .page_flex {
   display: flex;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .slider_all {
     display: flex;
