@@ -6,38 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.2/lottie.min.js"
+        integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .test {
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Messenger 洽談外掛程式 Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your 洽談外掛程式 code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
+    <div>12121212</div>
+    <div class="test" id="testt"></div>
     <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "104327762263702");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+        // lottie.loadAnimation({
+        //     container: document.getElementById('testt'),
+        //     wrapper: svgContainer,
+        //     animType: 'svg',
+        //     loop: true,
+        //     path: './img/animate/peter_fb/peter2.json'
+        // });
+        const a = lottie.loadAnimation({
+            container: testt,
+            animType: 'svg',
+            loop: true,
+            path: './img/animate/peter_yt/peter1.json',
+        });
+        // a.setSpeed(10000);
+        // container: 對應的 HTML 元素 id
+        // animationData: 動畫的 JSON 資料
+        // path: 動畫的 JSON 資料來源(animationData、path 擇一使用即可)
+        // loop: 循環播放(true / false / number)
+        // autoplay: 自動播放（true / false）
+        // name: 名稱
+        // renderer: 設置渲染器（’svg’ / ‘canvas’ / ‘html’）
 
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v13.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        // 除了基礎的參數以外，還有許多事件可以設置(播放、暫停、播放速度等等)，使用方式舉例：
+        // 透過 setSpeed() 就可以加快動畫的速度。
+        // 常用也包括 play()、stop()、pause();
+        // 可設置參數詳細內容可參考這裡：https://airbnb.io/lottie/#/web?id=usage-1
     </script>
 </body>
 

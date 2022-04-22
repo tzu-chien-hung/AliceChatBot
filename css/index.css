@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -7,33 +6,38 @@ body {
     color: #4F4F4F;
     /* letter-spacing: 0.03em; */
 }
-.home_bg{
+
+.home_bg {
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
     /* height: 100vh; */
 }
-.home_bg_both{
+
+.home_bg_both {
     /* border: 1px solid red; */
     display: flex;
     height: 100vh;
     position: relative;
 }
-.yt_link{
+
+.yt_link {
     display: block;
     width: 46%;
     height: 100%;
     /* z-index: 100; */
 }
-.fb_link{
+
+.fb_link {
     width: 54%;
     height: 100%;
 }
-.yt_bg{
+
+.yt_bg {
     width: 53%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     /* height: 100%; */
     background-image: url(../img/laptop/youtube_bg2.png);
@@ -42,23 +46,41 @@ body {
     /* background-position: center; */
     /* overflow: hidden; */
 }
-.yt_link:hover .yt_bg{
+
+.yt_link:hover .yt_bg {
     background-image: url(../img/laptop/youtube_color_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fb_bg{
+
+.fb_bg {
     width: 53%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     background-image: url(../img/laptop/facebook_bg2.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-.fb_link:hover .fb_bg{
+
+.fb_link:hover .fb_bg {
     background-image: url(../img/laptop/facebook_color_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.home_peter{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.home_peter_img {
+    width: 60%;
+    margin: 0 auto;
+    /* height: 1000px; */
+
+}
+
+.home_peter img{
+    width: 100%;
 }

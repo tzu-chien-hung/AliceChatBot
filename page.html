@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALICE chatbox</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.2/lottie.min.js"
+        integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/page.css">
+
     <style>
         .fb_dialog .fb_dialog_content iframe {
             right: 80px !important;
@@ -73,6 +77,37 @@
                                                     如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <a href="#">#對話訂單</a><br>
                                                     如果想要收集用戶意見，並透過專人接洽訂購事宜，請輸入 <a href="#">#專人服務</a>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="yt_loding" id="yt_loding">
+                                    <div class="yt_loding_bg">
+                                        <div class="yt_loding_aside">
+                                            <div class="yt_loding_aside_img">
+                                                <img class="yt_loding_aside_img_img"
+                                                    src="./img/alice_logo.png" alt=""></div>
+                                            <div class="yt_loding_aside_title">
+                                                <div class="yt_loding_aside_title_img_div"><img class="yt_loding_aside_title_img"
+                                                        src="./img/yt_logo.png" alt=""></div>
+                                                <div class="yt_loding_aside_title_span">體驗</div>
+                                            </div>
+                                        </div>
+                                        <div class="yt_loding_peter_all">
+                                            <div class="yt_loding_peter_div">
+                                                <div class="yt_loding_peter_txt">歡迎體驗<br>
+                                                    ALICE Chatbot 會員數據機器人
+                                                </div>
+                                                <div class="loding_peter_btn" id="yt_loding_close_btn">進入體驗</div>
+                                            </div>
+                                            <div class="yt_peter_head_div">
+                                                <div class="yt_peter_head" id="yt_peter_head"></div>
+                                            </div>
+                                        </div>
+                                        <div class="loding_tab_btn loding_tab_btn_yt">
+                                            <div class="loding_tab_btn_txt">點擊切換至 Facebook</div>
+                                            <div class="loding_tab_btn_img">
+                                                <img src="./img/arrow.gif" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -304,7 +339,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -336,6 +370,38 @@
                                                 <div class="fb_pop_box_txt">立即前往 Facebook 體驗</div>
                                                 <div class="fb_pop_box_btn">確認</div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb_loding" id="fb_loding">
+                                    <div class="fb_loding_bg">
+                                        <div class="fb_aside">
+                                            <div class="fb_aside_img"><img class="fb_aside_img_img"
+                                                    src="./img/alice_logo.png" alt=""></div>
+                                            <div class="fb_aside_title">
+                                                <div class="fb_aside_title_img_div">
+                                                    <img class="fb_aside_title_img" src="./img/fb_logo.png" alt="">
+                                                </div>
+                                                <div class="fb_aside_title_span">體驗</div>
+                                            </div>
+                                        </div>
+                                        <div class="fb_loding_peter_all">
+                                            <div class="fb_loding_peter_div">
+                                                <div class="fb_loding_peter_txt">歡迎體驗<br>
+                                                    ALICE Chatbot 會員數據機器人
+                                                </div>
+                                                <div class="loding_peter_btn loding_peter_btn2" id="fb_loding_close_btn">進入體驗</div>
+                                            </div>
+                                            <div class="fb_peter_head_div">
+                                                <div class="fb_peter_head" id="fb_peter_head"></div>
+                                            </div>
+                                        </div>
+                                        <div class="loding_tab_btn loding_tab_btn_fb">
+                                            <div class="loding_tab_btn_img2">
+                                                <img src="./img/arrow.gif" alt="">
+                                            </div>
+                                            <div class="loding_tab_btn_txt">點擊切換至 YouTube</div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -398,6 +464,20 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <script src="./js/page.js"></script>
+    <script>
+        const yt = lottie.loadAnimation({
+            container: yt_peter_head,
+            animType: 'svg',
+            loop: true,
+            path: './img/animate/peter_yt/peter1.json',
+        });
+        const fb = lottie.loadAnimation({
+            container: fb_peter_head,
+            animType: 'svg',
+            loop: true,
+            path: './img/animate/peter_fb/peter2.json',
+        });
+    </script>
 </body>
 
 </html>

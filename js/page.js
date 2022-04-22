@@ -32,6 +32,18 @@ arrow_right.addEventListener('click', function () {
     };
     fb_message.style.display= 'none';
 });
+// ==========================  loging 頁面的js =============================
+const yt_loding = document.getElementById('yt_loding');
+const fb_loding = document.getElementById('fb_loding');
+const fb_loding_close_btn = document.getElementById('fb_loding_close_btn');
+const yt_loding_close_btn = document.getElementById('yt_loding_close_btn');
+fb_loding_close_btn.addEventListener('click', function () {
+  fb_loding.style.display= 'none';
+});
+yt_loding_close_btn.addEventListener('click', function () {
+  yt_loding.style.display= 'none';
+});
+
 
 // ==========================  yt =============================
 

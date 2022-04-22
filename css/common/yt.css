@@ -177,6 +177,87 @@
 .yt_main {
   width: calc(100vw - 297px);
 }
+.yt_loding_aside {
+  width: 183px;
+  margin-top: 25px;
+  position: absolute;
+  left: 34px;
+}
+
+.yt_loding_aside_img {
+  width: 183px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.yt_loding_aside_img_img {
+  width: 100%;
+}
+
+.yt_loding_aside_title {
+  display: flex;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.yt_loding_aside_title_img_div {
+  padding: 10px 0px 10px 15px;
+  width: 80px;
+}
+
+.yt_loding_aside_title_img {
+  width: 100%;
+}
+
+.yt_loding_aside_title_span {
+  height: 25px;
+  padding: 8px 10px;
+}
+.yt_loding {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+.yt_loding_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.yt_loding_peter_div {
+  width: 550px;
+  height: 314px;
+  position: absolute;
+  top: 150px;
+  right: 15%;
+  background-image: url(../../img/dialog.svg);
+}
+
+.yt_peter_head_div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 219px;
+}
+
+.yt_loding_peter_txt{
+  width: 550px;
+  height: 83px;
+  padding-top: 52px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+
+
 
 @media (max-width: 1440.98px) {
   .yt_aside {
@@ -282,7 +363,7 @@
   }
 
   .yt_main {
-    width: calc(100vw - 195px);
+    width: calc(100vw - 215px);
   }
 
   .YouTube_block_bg {
@@ -343,26 +424,31 @@
     flex-wrap: nowrap;
     height: 50px;
   }
+
   .yt_aside_title_img_div {
     padding: 0px 5px 0px 15px;
     width: 100px;
     height: 63px;
     display: flex;
     align-items: center;
-}
-.yt_aside_title_span {
-  height: 67px;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-}
+  }
+
+  .yt_aside_title_span {
+    height: 67px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+
   .YouTube_block_bg {
     width: 600px;
     height: 435px;
   }
+
   .yt_main {
     width: calc(100vw - 80px);
   }
+
   .YouTube_block {
     width: 567px;
     height: 348px;
@@ -373,6 +459,7 @@
     font-size: 16px;
     padding: 0px 16px 10px 16px;
   }
+
   .yt_hint_img_div {
     width: 50px;
     height: 50px;
