@@ -1,39 +1,46 @@
 .YouTube_block_bg {
   width: 950px;
   /* height: 630px; */
-  margin-top:25px;
+  margin: 25px auto 0px auto;
   background: #ffffff;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .YouTube_block {
   padding: 25px 25px 10px 25px;
 }
+
 .YouTube_block_txt {
   padding: 0px 25px 10px 25px;
   font-size: 22px;
   font-weight: 500;
   color: #262938;
 }
+
 .yt {
   /* margin: 0 auto; */
   width: 100vw;
   /* height: 1200px; */
   display: flex;
 }
+
 .yt_aside {
   width: 183px;
   margin-top: 25px;
   margin-left: 34px;
 }
+
 .yt_aside_img {
   width: 183px;
   height: 90px;
   margin: 0 auto;
 }
+
 .yt_aside_img_img {
   width: 100%;
 }
+
 .yt_aside_title {
   display: flex;
   justify-content: flex-end;
@@ -41,28 +48,34 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 .yt_aside_title_img_div {
   padding: 10px 0px 10px 10px;
   width: 76px;
 }
+
 .yt_aside_title_img {
   width: 100%;
 }
+
 .yt_aside_title_span {
   height: 25px;
   padding: 8px 10px;
 }
+
 .yt_box {
   display: flex;
   width: 100%;
   justify-content: space-between;
   /* text-align: center; */
 }
+
 .yt_aside_video {
   display: flex;
   justify-content: space-between;
   /* margin: 0 auto; */
 }
+
 .box2_2 {
   /* margin: 0 auto;
     width: 100%;
@@ -76,6 +89,10 @@
     position: relative;*/
 }
 
+.yt_hint_box_both {
+  margin: 0 auto;
+}
+
 .yt_hint_box {
   display: flex;
   /* display: none; */
@@ -86,25 +103,29 @@
   box-sizing: border-box;
   border-radius: 20px;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
+
 .yt_hint_box_1 {
   display: flex;
   display: none;
 }
+
 .yt_hint_box_2 {
   height: 180px;
 }
+
 .yt_hint_img_div {
   width: 80px;
   height: 80px;
   margin-left: 25px;
   margin-right: 30px;
 }
+
 .yt_hint_img {
   width: 100%;
 }
+
 .yt_hint_box_content {
   display: flex;
   font-weight: 500;
@@ -113,40 +134,261 @@
   align-items: center;
   letter-spacing: 0.03em;
 }
+
 .yt_hint_box_content_2 {
   display: block;
   font-size: 20px;
 }
+
 .yt_hint_box_content_img_div {
   width: 50px;
   height: 50px;
   margin-left: 10px;
   margin-right: 12px;
 }
+
 .yt_hint_box_content_img {
   width: 100%;
 }
+
 .yt_message {
   height: 100%;
 }
+
 .yt_message_all {
   height: 100%;
 }
+
 .yt_message_content {
   height: 100%;
 }
+
 .yt_message_img_div {
   width: 100px;
   height: 100px;
   margin-left: 47px;
   margin-top: 780px;
 }
+
 .yt_message_img {
   width: 100%;
 }
+
 .yt_main {
   width: calc(100vw - 297px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
+
+@media (max-width: 1440.98px) {
+  .yt_aside {
+    width: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .yt_aside_img {
+    width: 160px;
+    height: 75px;
+  }
+
+  .yt_main {
+    width: calc(100vw - 260px);
+  }
+
+  .YouTube_block_bg {
+    width: 800px;
+    height: 527px;
+    margin: 20px auto 0px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .YouTube_block {
+    width: 757px;
+    height: 451px;
+    padding: 25px 22px 10px 22px;
+  }
+
+  .YouTube_block_txt {
+    font-size: 18.5px;
+    padding: 0px 22px 10px 22px;
+  }
+
+  .yt_hint_img_div {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .yt_hint_box {
+    /* display: flex; */
+    /* display: none;
+    height: 100px;
+    width: 950px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(130, 130, 130, 0.8);
+    box-sizing: border-box;
+    border-radius: 20px;
+    align-items: center; */
+    width: 800px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .yt_hint_box_2 {
+    display: flex;
+    height: 120px;
+  }
+
+  .yt_hint_box_content_2 {
+    /* display: block; */
+    font-size: 16px;
+  }
+
+  .yt_hint_box_content {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .yt_aside {
+    width: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .yt_aside_img {
+    width: 120px;
+  }
+
+  .yt_aside_title {
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .yt_aside_title_img_div {
+    padding: 0px 0px 0px 15px;
+    width: 85px;
+    height: 30px;
+  }
+
+  .yt_aside_title_span {
+    height: 25px;
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .yt_main {
+    width: calc(100vw - 195px);
+  }
+
+  .YouTube_block_bg {
+    width: 700px;
+    height: 507px;
+    margin: 15px auto 0px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .YouTube_block {
+    width: 661px;
+    height: 405px;
+    padding: 25px 20px 10px 20px;
+  }
+
+  .YouTube_block_txt {
+    font-size: 18.5px;
+    padding: 0px 22px 10px 22px;
+  }
+
+  .yt_hint_img_div {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  .yt_hint_box {
+    width: 700px;
+    margin-top: 20px;
+  }
+
+  .yt_hint_box_content_2 {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 960.98px) {
+  .yt_aside_video {
+    display: block;
+  }
+
+  .yt_aside {
+    display: flex;
+    width: 400px;
+    height: 70px;
+  }
+
+  .yt_aside_img {
+    width: 130px;
+    margin: 0;
+  }
+
+  .yt_aside_title {
+    flex-wrap: nowrap;
+    height: 50px;
+  }
+  .yt_aside_title_img_div {
+    padding: 0px 5px 0px 15px;
+    width: 100px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+}
+.yt_aside_title_span {
+  height: 67px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+  .YouTube_block_bg {
+    width: 600px;
+    height: 435px;
+  }
+  .yt_main {
+    width: calc(100vw - 80px);
+  }
+  .YouTube_block {
+    width: 567px;
+    height: 348px;
+    padding: 16px 16px 8px 16px;
+  }
+
+  .YouTube_block_txt {
+    font-size: 16px;
+    padding: 0px 16px 10px 16px;
+  }
+  .yt_hint_img_div {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  .yt_hint_box {
+    width: 650px;
+    margin-top: 20px;
+  }
+
+  .yt_hint_box_content_2 {
+    font-size: 14px;
+  }
+}
+
+
+/* @media (max-width: 768.98px) {} */
