@@ -20,7 +20,9 @@ arrow_left.addEventListener('click', function () {
         ul.style.left = (left_index - 2) * 500 + "%";
         left_index--;
     };
-    fb_message.style.display= 'block';
+    setTimeout(function () {
+      fb_message.style.display= 'block';
+    }, 1000);
 });
 // console.log(fb_message);
 arrow_right.addEventListener('click', function () {
