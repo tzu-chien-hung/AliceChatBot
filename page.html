@@ -34,7 +34,8 @@
         .animate__flash {
             --animate-duration: 1.5s;
         }
-        .fb_message{
+
+        .fb_message {
             display: none;
         }
     </style>
@@ -496,20 +497,14 @@
         // }, 7000);
     </script>
     <script>
+        // ==============  閃爍動畫  ===============
         $("#yt_loding_close_btn").click(function () {
             $(".yt_hint_box_1").addClass('animate__flash');
         });
-
         setTimeout(function () {
             $(".yt_hint_box_1").addClass('animate__flash');
         }, 8000);
-        $("#yt_loding_close_btn").click(function () {
-            $(".fb_message").css('display', 'flex');
-        });
-
-        setTimeout(function () {
-            $(".fb_message").css('display', 'flex');
-        }, 9000);
+        // ==============  點擊登入後換div 字  ===============
         $("._a2zm").click(function () {
             $(".yt_hint_box_1").css('display', 'none');
             $(".yt_hint_box_2").css('display', 'flex');
@@ -518,6 +513,17 @@
             $(".yt_hint_box_1").css('display', 'none');
             $(".yt_hint_box_2").css('display', 'flex');
         });
+        // ==============  fb message 延後顯示===============
+        $("#yt_loding_close_btn").click(function () {
+            setTimeout(function () {
+                $(".fb_message").css('display', 'flex');
+            }, 3000);
+        });
+        setTimeout(function () {
+            $(".fb_message").css('display', 'flex');
+        }, 9000);
+
+
 
     </script>
     <script>
