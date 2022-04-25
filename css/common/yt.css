@@ -107,12 +107,11 @@
 }
 
 .yt_hint_box_1 {
-  display: flex;
-  display: none;
+  /* display: none; */
 }
 
 .yt_hint_box_2 {
-  height: 180px;
+  display: none;
 }
 
 .yt_hint_img_div {
@@ -135,10 +134,7 @@
   letter-spacing: 0.03em;
 }
 
-.yt_hint_box_content_2 {
-  display: block;
-  font-size: 20px;
-}
+.yt_hint_box_content_2 {}
 
 .yt_hint_box_content_img_div {
   width: 50px;
@@ -177,6 +173,7 @@
 .yt_main {
   width: calc(100vw - 297px);
 }
+
 .yt_loding_aside {
   width: 183px;
   margin-top: 25px;
@@ -214,6 +211,7 @@
   height: 25px;
   padding: 8px 10px;
 }
+
 .yt_loding {
   /* position: absolute;
   top: 0;
@@ -227,12 +225,15 @@
 }
 
 .yt_loding_peter_div {
+  display: none;
   width: 550px;
   height: 314px;
   position: absolute;
   top: 150px;
   right: 15%;
   background-image: url(../../img/dialog.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .yt_peter_head_div {
@@ -242,7 +243,7 @@
   width: 219px;
 }
 
-.yt_loding_peter_txt{
+.yt_loding_peter_txt {
   width: 550px;
   height: 83px;
   padding-top: 52px;
@@ -260,6 +261,23 @@
 
 
 @media (max-width: 1440.98px) {
+  .yt_loding_peter_div {
+    width: 460px;
+    height: 262.6px;
+    top: 100px;
+    right: 15%;
+  }
+
+  .yt_loding_peter_txt {
+    width: 460px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .yt_peter_head_div {
+    width: 180px;
+  }
+
   .yt_aside {
     width: 160px;
     margin-top: 20px;
@@ -318,21 +336,27 @@
   }
 
   .yt_hint_box_2 {
-    display: flex;
-    height: 120px;
-  }
-
-  .yt_hint_box_content_2 {
-    /* display: block; */
-    font-size: 16px;
   }
 
   .yt_hint_box_content {
-    line-height: 24px;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 1199.98px) {
+  .yt_loding_peter_div {
+    width: 400px;
+    height: 228.36px;
+    top: 80px;
+  }
+
+  .yt_loding_peter_txt {
+    width: 400px;
+    height: 35px;
+    line-height: 32px;
+    font-size: 24px;
+  }
+
   .yt_aside {
     width: 120px;
     margin-top: 15px;
@@ -398,13 +422,26 @@
     margin-top: 20px;
   }
 
-  .yt_hint_box_content_2 {
-    font-size: 14px;
+  .yt_hint_box_content {
+    font-size: 18px;
   }
 
 }
 
 @media (max-width: 960.98px) {
+  .yt_loding_peter_div {
+    width: 350px;
+    height: 199.82px;
+  }
+  .yt_loding_peter_txt {
+    width: 350px;
+    height: 20px;
+    line-height: 28px;
+    font-size: 21px;
+  }
+  .yt_peter_head_div {
+    width: 160px;
+  }
   .yt_aside_video {
     display: block;
   }
@@ -472,8 +509,8 @@
     margin-top: 20px;
   }
 
-  .yt_hint_box_content_2 {
-    font-size: 14px;
+  .yt_hint_box_content {
+    font-size: 17px;
   }
 }
 

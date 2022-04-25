@@ -54,6 +54,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .fb_loding_bg {
   width: calc(100vw - 80px);
   height: 100vh;
@@ -62,6 +63,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .loding_peter_btn {
   width: 180px;
   height: 50px;
@@ -77,9 +79,11 @@ body {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-.loding_peter_btn2{
+
+.loding_peter_btn2 {
   background: #93C3FC;
 }
+
 .loding_tab_btn {
   width: 300px;
   height: 100px;
@@ -88,36 +92,64 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #828282;
   position: absolute;
+  display: none;
 }
+
 .loding_tab_btn_yt {
   bottom: 100px;
   right: 80px;
 }
+
 .loding_tab_btn_fb {
   bottom: 100px;
   left: 80px;
 }
+
 .loding_tab_btn_img {
   width: 30px;
   height: 27.86px;
   margin-left: 15px;
 }
+
 .loding_tab_btn_img2 {
   width: 30px;
   height: 27.86px;
   margin-right: 15px;
 }
+
 .loding_tab_btn_img img {
   width: 100%
 }
+
 .loding_tab_btn_img2 img {
   width: 100%;
-  transform:rotate(180deg);
+  transform: rotate(180deg);
+}
+@media (max-width: 1440.98px) {
+  .loding_peter_btn {
+    width: 144px;
+    height: 40px;
+    margin: 35px auto;
+    font-size: 18px;
+  }
+}
+@media (max-width: 960.98px) {
+  .loding_peter_btn {
+    width: 120px;
+    height: 33.33px;
+    margin: 35px auto;
+    font-size: 16px;
+  }
+  .loding_tab_btn{
+    width: 240px;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
 }

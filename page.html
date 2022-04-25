@@ -10,7 +10,8 @@
         integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/page.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         .fb_dialog .fb_dialog_content iframe {
             right: 80px !important;
@@ -25,6 +26,10 @@
         .fb_invisible_flow span iframe {
             right: 85px !important;
             bottom: 190px !important;
+        }
+
+        .animate__flash {
+            --animate-duration: 1.5s;
         }
     </style>
 </head>
@@ -55,7 +60,7 @@
                                             </div>
                                         </div>
                                         <div class="yt_hint_box_both">
-                                            <div class="yt_hint_box yt_hint_box_1">
+                                            <div class="yt_hint_box yt_hint_box_1 animate__animated ">
                                                 <div class="yt_hint_img_div"><img class="yt_hint_img"
                                                         src="./img/peter_avatar.png" alt=""></div>
                                                 <div class="yt_hint_box_content">
@@ -68,14 +73,11 @@
                                             </div>
                                         </div>
                                         <div class="yt_hint_box_both">
-                                            <div class="yt_hint_box yt_hint_box_2">
+                                            <div class="yt_hint_box yt_hint_box_2 animate__animated animate__flash">
                                                 <div class="yt_hint_img_div"><img class="yt_hint_img"
                                                         src="./img/peter_avatar.png" alt=""></div>
                                                 <div class="yt_hint_box_content yt_hint_box_content_2">
-                                                    您可以試著輸入以下關鍵字進行體驗： <br>
-                                                    如果自家擁有電商網站，想要透過ALICE Chatbot收集會員數據，請輸入 <a href="#">#網站銷售</a><br>
-                                                    如果想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <a href="#">#對話訂單</a><br>
-                                                    如果想要收集用戶意見，並透過專人接洽訂購事宜，請輸入 <a href="#">#專人服務</a>
+                                                    想要透過ALICE Chatbot收集會員數據與訂單資料，請輸入 <span class="fb_blue">#ALICE</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -469,6 +471,41 @@
     </script>
     <script src="./js/page.js"></script>
     <script>
+        setTimeout(function () {
+            $("div.yt_loding_peter_div").fadeIn(2000);
+        }, 1500);
+        setTimeout(function () {
+            $("div.loding_tab_btn_yt").fadeIn(2000);
+            $("div.loding_tab_btn_yt").css('display', 'flex');
+        }, 3000);
+        setTimeout(function () {
+            $("div.yt_loding").fadeOut(1000);
+        }, 7000);
+        setTimeout(function () {
+            $("div.fb_loding_peter_div").fadeIn(2000);
+        }, 1500);
+        setTimeout(function () {
+            $("div.loding_tab_btn_fb").fadeIn(2000);
+            $("div.loding_tab_btn_fb").css('display', 'flex');
+        }, 3000);
+                // setTimeout(function () {
+        //     $("div.fb_loding").fadeOut(3000);
+        // }, 7000);
+    </script>
+    <script>
+        $("#yt_loding_close_btn").click(function () {
+            $(".yt_hint_box_1").addClass('animate__flash');
+        });
+
+        setTimeout(function () {
+            $(".yt_hint_box_1").addClass('animate__flash');
+        }, 8000);
+        $(".fb_message").click(function () {
+            $(".yt_hint_box_1").css('display','none');
+            $(".yt_hint_box_2").css('display','flex');
+        });
+    </script>
+    <script>
         const yt = lottie.loadAnimation({
             container: yt_peter_head,
             animType: 'svg',
@@ -482,6 +519,7 @@
             path: './img/animate/peter_fb/peter2.json',
         });
     </script>
+
 </body>
 
 </html>

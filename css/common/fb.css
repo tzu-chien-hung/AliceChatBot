@@ -525,6 +525,8 @@
   top: 150px;
   left: 15%;
   background-image: url(../../img/dialog.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fb_peter_head_div {
@@ -549,6 +551,22 @@
 }
 /* =============== ＲＷＤ =============== */
 @media (max-width: 1440.98px) {
+  .fb_loding_peter_div {
+    width: 460px;
+    height: 262.6px;
+    top: 40px;
+    left: 10%;
+  }
+
+  .fb_loding_peter_txt {
+    width: 460px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .fb_peter_head_div {
+    width: 330px;
+  }
   .fb_nav_1 {
     height: 70px;
   }
@@ -583,6 +601,17 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .fb_loding_peter_div {
+    width: 400px;
+    height: 228.36px;
+  }
+
+  .fb_loding_peter_txt {
+    width: 400px;
+    height: 35px;
+    line-height: 32px;
+    font-size: 24px;
+  }
   .fb_nav_1_logo {
     width: 280px;
     height: 35px;
@@ -657,7 +686,25 @@
     margin-bottom: 10px;
   }
 }
+@media (max-width: 1099.98px) {
+  .fb_loding_peter_div {
+    left: 6%;
+  }
+}
 @media (max-width: 960.98px) {
+  .fb_loding_peter_div {
+    width: 350px;
+    height: 199.82px;
+  }
+  .fb_loding_peter_txt {
+    width: 350px;
+    height: 20px;
+    line-height: 28px;
+    font-size: 21px;
+  }
+  .fb_peter_head_div {
+    width: 320px;
+  }
   .fb_nav_1_search_bar {
     width: 35px;
   }

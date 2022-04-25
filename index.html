@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .hover {
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,23 +20,47 @@
         <div>
             <div class="home_bg">
                 <div class="home_bg_both">
-                    <a href="#" class="yt_link">
+                    <a href="./page.html" class="yt_link">
                         <div class="yt_bg">
-
+                            <div class="home_yt_img_color">
+                                <img src="./img/youtube_color_icon.png" alt="">
+                            </div>
                         </div>
                     </a>
                     <a href="#" class="fb_link">
-                        <div class="fb_bg"></div>
+                        <div class="fb_bg">
+                            <div class="home_fb_img_color">
+                                <img src="./img/facebook_color_icon.png" alt="">
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
             <div class="home_peter">
                 <div class="home_peter_img">
                     <img src="./img/peter.png" alt="">
+                    <div class="home_yt_img">
+                        <img src="./img/youtube_icon.png" alt="">
+                    </div>
+                    <div class="home_fb_img">
+                        <img src="./img/facebook_icon.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $('a.yt_link').hover(function () {
+            $('div.home_yt_img').addClass('hover');
+        }, function () {
+            $('div.home_yt_img').removeClass('hover')
+        });
+        $('a.fb_link').hover(function () {
+            $('div.home_fb_img').addClass('hover');
+        }, function () {
+            $('div.home_fb_img').removeClass('hover')
+        });
+    </script>
 </body>
 
 </html>

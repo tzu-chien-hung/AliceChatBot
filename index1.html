@@ -10,17 +10,33 @@
         integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
-        .test {
-            width: 100px;
-            height: 200px;
-            border: 1px solid red;
+        div {
+            border: 1px solid black;
+        }
+
+        div>ul {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.6s linear;
+        }
+
+        div:hover>ul {
+            visibility: visible;
+            opacity: 1;
         }
     </style>
 </head>
 
 <body>
-    <div>12121212</div>
-    <div class="test" id="testt"></div>
+    <!-- <div>12121212</div>
+    <div class="test" id="testt"></div> -->
+    <div>
+        <ul>
+            <li> Apple </li>
+            <li> Banana </li>
+            <li> Mango </li>
+        </ul>
+    </div>
     <script>
         // lottie.loadAnimation({
         //     container: document.getElementById('testt'),
