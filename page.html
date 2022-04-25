@@ -26,10 +26,16 @@
         .fb_invisible_flow span iframe {
             right: 85px !important;
             bottom: 190px !important;
+            max-height: calc(100% - 190px) !important;
+            height: 400px !important;
+            min-height: 300px !important;
         }
 
         .animate__flash {
             --animate-duration: 1.5s;
+        }
+        .fb_message{
+            display: none;
         }
     </style>
 </head>
@@ -497,10 +503,17 @@
         setTimeout(function () {
             $(".yt_hint_box_1").addClass('animate__flash');
         }, 8000);
-        $(".fb_message").click(function () {
+        $("#fb-root").click(function () {
             $(".yt_hint_box_1").css('display', 'none');
             $(".yt_hint_box_2").css('display', 'flex');
         });
+        $("#yt_loding_close_btn").click(function () {
+            $(".yt_hint_box_1").addClass('animate__flash');
+        });
+
+        setTimeout(function () {
+            $(".yt_hint_box_1").addClass('animate__flash');
+        }, 8000);
     </script>
     <script>
         const yt = lottie.loadAnimation({
