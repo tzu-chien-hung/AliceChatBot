@@ -442,7 +442,9 @@
   .yt_hint_box_content {
     font-size: 18px;
   }
-
+  .yt_pop_box_btn{
+    margin-left: 140px;
+  }
 }
 
 @media (max-width: 960.98px) {
@@ -531,6 +533,9 @@
   }
   .yt_pop_box_btn{
     width: 150px;
+  }
+  .yt_pop_box_btn{
+    margin-left: 125px;
   }
 }
 
