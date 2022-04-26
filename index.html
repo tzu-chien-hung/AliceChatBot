@@ -18,7 +18,7 @@
             background-image: url(./img/laptop/facebook_color_bg2.png);
         }
 
-        .yt_bg_loding_hover {
+        /* .yt_bg_loding_hover {
             background-image: url(./img/laptop/youtube_color_bg2.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -27,7 +27,7 @@
             background-image: url(./img/laptop/facebook_color_bg2.png);
             background-repeat: no-repeat;
             background-size: cover;
-        }
+        } */
     </style>
 </head>
 
@@ -70,18 +70,18 @@
     <script>
 
         $('a.yt_link').hover(function () {
-            $('div.yt_bg').addClass('yt_bg_loding_hover');
+            // $('div.yt_bg').addClass('yt_bg_loding_hover');
             $('div.home_yt_img').addClass('hover');
         }, function () {
-            $('div.yt_bg').removeClass('yt_bg_loding_hover');
+            // $('div.yt_bg').removeClass('yt_bg_loding_hover');
             $('div.home_yt_img').removeClass('hover');
             
         });
         $('a.fb_link').hover(function () {
-            $('div.fb_bg').addClass('fb_bg_loding_hover');
+            // $('div.fb_bg').addClass('fb_bg_loding_hover');
             $('div.home_fb_img').addClass('hover');
         }, function () {
-            $('div.fb_bg').removeClass('fb_bg_loding_hover');
+            // $('div.fb_bg').removeClass('fb_bg_loding_hover');
             $('div.home_fb_img').removeClass('hover');
         });
     </script>
