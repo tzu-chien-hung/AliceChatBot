@@ -157,6 +157,7 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .fb_nav_2_btn {
@@ -164,6 +165,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 6.8px;
+  cursor: pointer;
 }
 
 .fb_nav_2_btn1 {
@@ -171,6 +173,7 @@
   height: 47.6px;
   background: #2f80ed;
   border-radius: 6.8px;
+  cursor: pointer;
 }
 
 .fb_nav_2_btn_img {
@@ -194,6 +197,7 @@
   height: 47.6px;
   background: #e7f3ff;
   border-radius: 6.8px;
+  cursor: pointer;
 }
 
 .fb_nav_2_btn3 {
@@ -201,6 +205,7 @@
   height: 47.6px;
   background: #e4e6ea;
   border-radius: 6.8px;
+  cursor: pointer;
 }
 
 .fb_nav_2_btn3_img {
@@ -551,6 +556,7 @@
   justify-content: center;
   letter-spacing: 0.03em;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .fb_pop_box_bg1 {
@@ -574,6 +580,7 @@
 
 .fb_pop_box_bg2 .fb_pop_box_btn {
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .fb_aside {
@@ -628,6 +635,7 @@
 }
 
 .fb_loding_peter_div {
+  display: none;
   width: 550px;
   height: 314px;
   position: absolute;

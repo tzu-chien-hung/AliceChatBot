@@ -161,6 +161,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-left: 150px;
+  cursor: pointer;
 }
 
 .yt_message {
