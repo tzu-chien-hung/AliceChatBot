@@ -68,16 +68,3 @@ yt_loding_close_btn.addEventListener('click', function () {
   yt_loding.style.display= 'none';
 });
 
-// ==========================  loging 頁面的peter json動畫  =============================
-const yt = lottie.loadAnimation({
-  container: yt_peter_head,
-  animType: 'svg',
-  loop: true,
-  path: './img/animate/peter_yt/peter1.json',
-});
-const fb = lottie.loadAnimation({
-  container: fb_peter_head,
-  animType: 'svg',
-  loop: true,
-  path: './img/animate/peter_fb/peter2.json',
-});
