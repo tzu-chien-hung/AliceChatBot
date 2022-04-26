@@ -41,6 +41,7 @@ body {
     top: 0;
     left: 0;
     /* height: 100%; */
+    background-image: url(./img/laptop/youtube_color_bg2.png);
     background-image: url(../img/laptop/youtube_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,6 +61,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    background-image: url(./img/laptop/facebook_color_bg2.png);
     background-image: url(../img/laptop/facebook_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
