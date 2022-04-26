@@ -76,7 +76,7 @@
                                                             class="yt_hint_box_content_img" src="./img/massage.svg"
                                                             alt=""></div>
                                                     <div>，並進行登入</div>
-                                                    <div class="fb_pop_box_btn fb_pop_box_btn2">下一步</div>
+                                                    <div class="yt_pop_box_btn yt_pop_box_btn1">下一步</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -123,8 +123,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slider_arrow slider_arrow_right" id="slider_arrow_right"
-                                    onclick="stopVideo()">
+                                <div class="slider_arrow slider_arrow_right" id="slider_arrow_right">
                                     <div><img class="slider_img_icon" src="./img/tab_facebook.svg" alt=""></div>
                                     <div class="slider_img_txt_div"><img class="slider_img_txt" src="./img/fb_logo.png"
                                             alt=""></div>
@@ -468,6 +467,20 @@
     </script>
     <script src="./js/page.js"></script>
     <script>
+        const yt = lottie.loadAnimation({
+            container: yt_peter_head,
+            animType: 'svg',
+            loop: true,
+            path: './img/animate/peter_yt/peter1.json',
+        });
+        const fb = lottie.loadAnimation({
+            container: fb_peter_head,
+            animType: 'svg',
+            loop: true,
+            path: './img/animate/peter_fb/peter2.json',
+        });
+    </script>
+    <script>
         setTimeout(function () {
             $("div.yt_loding_peter_div").fadeIn(2000);
         }, 1500);
@@ -498,14 +511,14 @@
             $(".yt_hint_box_1").addClass('animate__flash');
         }, 8000);
         // ==============  yt點擊登入後換div 字  ===============
-        $("._a2zm").click(function () {
+        $(".yt_pop_box_btn1").click(function () {
             $(".yt_hint_box_1").css('display', 'none');
             $(".yt_hint_box_2").css('display', 'flex');
         });
-        $("._a2zk").click(function () {
-            $(".yt_hint_box_1").css('display', 'none');
-            $(".yt_hint_box_2").css('display', 'flex');
-        });
+        // $("._a2zk").click(function () {
+        //     $(".yt_hint_box_1").css('display', 'none');
+        //     $(".yt_hint_box_2").css('display', 'flex');
+        // });
         // ==============  yt -> fb message 延後顯示===============
         $("#yt_loding_close_btn").click(function () {
             setTimeout(function () {
@@ -518,6 +531,21 @@
 
     </script>
     <script>// fb script
+        const fb_gif = lottie.loadAnimation({
+            container: fb_content_gif_img,
+            animType: 'svg',
+            loop: false,
+            autoplay: false,
+            path: './img/animate/key+1/alice1.json',
+        });
+        const fb_gif2 = lottie.loadAnimation({
+            container: fb_content_gif_keyin,
+            animType: 'svg',
+            loop: false,
+            autoplay: false,
+            path: './img/animate/keyin/alice2.json',
+        });
+
         // ==============  fb淡入 ===============
         $("#fb_loding_close_btn").click(function () {
             $(".fb_pop_box_bg1").fadeIn(2000);
@@ -527,12 +555,13 @@
             $(".fb_pop_box_bg1").fadeIn(2000);
             $(".fb_pop_box_bg1").css('display', 'flex');
         }, 8000);
-        
+
         // ==============  fb 點選下一步 移除灰底 ===============
         $(".fb_pop_box_btn1").click(function () {
             $(".fb_pop_box_big_bg1").css('display', 'none');
             $(".fb_content_l_bottom_3").css('display', 'none');
             $(".fb_content_l_bottom_3_gif").css('display', 'block');
+            fb_gif.play();
             // $(document).ready(function () {
             //     $(".fb_content_l_bottom_3_gif").prepend('<div id="fb_content_gif_img"></div>');
             // });
@@ -545,12 +574,14 @@
                 $(".fb_pop_box_bg2").css('display', 'flex');
             }, 4000);
         });
-         // ============= 第二個 下一步 ==================
+        // ============= 第二個 下一步 ==================
         $(".fb_pop_box_btn2").click(function () {
             $(".fb_pop_box_big_bg2").css('display', 'none');
             setTimeout(function () {
                 $(".fb_content_l_bottom_3_gif2").css('display', 'block');
+                fb_gif2.play();
             }, 2000);
+
             setTimeout(function () {
                 $(".fb_pop_box_big_bg3").css('display', 'block');
                 $(".fb_pop_box_bg3").fadeIn(2000);
@@ -560,35 +591,7 @@
         // ============= 第三個 下一步 ==================
         $(".fb_pop_box_btn3").click(function () {
             window.location.href = "https://www.facebook.com/TrendBuyChannel/";
-            
-        });
-    </script>
-    <script>
-        const yt = lottie.loadAnimation({
-            container: yt_peter_head,
-            animType: 'svg',
-            loop: true,
-            path: './img/animate/peter_yt/peter1.json',
-        });
-        const fb = lottie.loadAnimation({
-            container: fb_peter_head,
-            animType: 'svg',
-            loop: true,
-            path: './img/animate/peter_fb/peter2.json',
-        });
-        const fb_gif = lottie.loadAnimation({
-            container: fb_content_gif_img,
-            animType: 'svg',
-            loop: 5,
-            autoplay: true,
-            path: './img/animate/key+1/alice1.json',
-        });
-        const fb_gif2 = lottie.loadAnimation({
-            container: fb_content_gif_keyin,
-            animType: 'svg',
-            loop: 5,
-            autoplay: true,
-            path: './img/animate/keyin/alice2.json',
+
         });
     </script>
 

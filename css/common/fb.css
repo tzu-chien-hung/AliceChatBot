@@ -425,6 +425,7 @@
 
 .fb_content_l_bottom_3_gif {
   display: none;
+  padding: 10px;
 }
 
 .fb_content_l_bottom_3_icon {
@@ -488,7 +489,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 80px);
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -676,6 +677,11 @@
 
 /* =============== ＲＷＤ =============== */
 @media (max-width: 1440.98px) {
+  .fb_pop_box_bg {
+    margin: 550px auto 0px;
+    /* width: 700px;
+    height: 100px; */
+  }
   .fb_loding_peter_div {
     width: 460px;
     height: 262.6px;
@@ -844,6 +850,14 @@
 }
 
 @media (max-width: 960.98px) {
+  .fb_pop_box_bg {
+    margin: 550px auto 0px;
+    width: 665px;
+    height: 100px;
+  }
+  .fb_pop_box_btn{
+    width: 150px;
+  }
   .fb_loding_peter_div {
     width: 350px;
     height: 199.82px;

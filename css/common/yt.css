@@ -147,6 +147,22 @@
   width: 100%;
 }
 
+.yt_pop_box_btn {
+  width: 180px;
+  height: 50px;
+  background: #FF8A7E;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-left: 150px;
+}
+
 .yt_message {
   height: 100%;
 }
@@ -339,7 +355,7 @@
   }
 
   .yt_hint_box_content {
-    font-size: 22px;
+    font-size: 21px;
   }
 }
 
@@ -511,6 +527,9 @@
 
   .yt_hint_box_content {
     font-size: 17px;
+  }
+  .yt_pop_box_btn{
+    width: 150px;
   }
 }
 
