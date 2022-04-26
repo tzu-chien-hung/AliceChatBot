@@ -49,11 +49,11 @@ body {
     /* overflow: hidden; */
 }
 
-.yt_link:hover .yt_bg {
+/* .yt_link:hover .yt_bg {
     background-image: url(../img/laptop/youtube_color_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .fb_bg {
     width: 53%;
@@ -68,11 +68,11 @@ body {
     background-position: center left;
 }
 
-.fb_link:hover .fb_bg {
+/* .fb_link:hover .fb_bg {
     background-image: url(../img/laptop/facebook_color_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 .home_yt_img{
     width: 80px;
     height: 80px;
