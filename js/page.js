@@ -8,20 +8,14 @@ let arrow_left = document.getElementById('slider_arrow_left');
 let arrow_right = document.getElementById('slider_arrow_right');
 
 // ==========================  yt =============================
-
-
-// 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
-
 tag.src = "https://www.youtube.com/iframe_api";
+
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
-  
   player = new YT.Player('player', {
     height: '535.91',
     width: '900',
@@ -29,31 +23,17 @@ function onYouTubeIframeAPIReady() {
     events: {
       // 'onReady': onPlayerReady,
     },
-
   });
-
 }
 
-// 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
 }
 
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false;
-//   function onPlayerStateChange(event) {
-//     if (event.data == YT.PlayerState.PLAYING && !done) {
-//       setTimeout(stopVideo, 6000);
-//       done = true;
-//     }
-//   }
 function stopVideo() {
-    // console.log('aa')
   player.stopVideo();
 }
-
+// ==========================  tab bar =============================
 arrow_left.addEventListener('click', function () {
     stopVideo();
     index--;
@@ -66,7 +46,6 @@ arrow_left.addEventListener('click', function () {
       fb_message.style.display= 'block';
     }, 1000);
 });
-// console.log(fb_message);
 arrow_right.addEventListener('click', function () {
   stopVideo();
     index++;
@@ -89,4 +68,16 @@ yt_loding_close_btn.addEventListener('click', function () {
   yt_loding.style.display= 'none';
 });
 
-
+// ==========================  loging 頁面的peter json動畫  =============================
+const yt = lottie.loadAnimation({
+  container: yt_peter_head,
+  animType: 'svg',
+  loop: true,
+  path: './img/animate/peter_yt/peter1.json',
+});
+const fb = lottie.loadAnimation({
+  container: fb_peter_head,
+  animType: 'svg',
+  loop: true,
+  path: './img/animate/peter_fb/peter2.json',
+});
