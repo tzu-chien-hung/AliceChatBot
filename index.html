@@ -12,6 +12,11 @@
         .hover {
             opacity: 0;
         }
+
+        .bg_loding {
+            background-image: url(./img/laptop/youtube_color_bg2.png);
+            background-image: url(./img/laptop/facebook_color_bg2.png);
+        }
     </style>
 </head>
 
@@ -49,14 +54,7 @@
             </div>
         </div>
     </div>
-    <script>
-        $('.yt_bg').load(function () {
-            console.log($(this).width());
-        });
-        $('.fb_bg').load(function () {
-            console.log($(this).width());
-        });
-    </script>
+    <div class="bg_loding"></div>
 
     <script>
 
