@@ -441,10 +441,11 @@
 <script>
     var url = location.hash;
     const url_container = document.getElementById('case_slider_all_container');
+    const fb_message_container = document.getElementById('fb-root');
     if(url === '#fb'){
         url_container.style.position = 'relative';
         url_container.style.right = '50%';
-
+        fb_message_container.style.display = 'none';
     }
 </script>
     <script type="text/javascript" id="www-widgetapi-script"
