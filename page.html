@@ -427,7 +427,7 @@
         var url = location.hash;
         const url_container = document.getElementById('case_slider_all_container');
         const fb_message_container = document.getElementById('fb-root');
-        if (url === '#AliceChatBox2') {
+        if (url === '#AliceChatBox_Facebook') {
             url_container.style.position = 'relative';
             url_container.style.right = '50%';
             fb_message_container.style.display = 'none';
@@ -473,19 +473,21 @@
             }, 8000);
         };
 
-        if (url === '#AliceChatBox2') {
+        if (url === '#AliceChatBox_Facebook') {
             fb_play_btn();
         };
-        if (url === '#AliceChatBox1') {
+        if (url === '#AliceChatBox_Youtube') {
             yt_play_btn();
         };
 
         const fb_arrow_left = document.getElementById('slider_arrow_left');
         const yt_arrow_right = document.getElementById('slider_arrow_right');
         fb_arrow_left.addEventListener('click', function () {
+            location.hash = '#AliceChatBox_Youtube';
             yt_play_btn();
         });
         yt_arrow_right.addEventListener('click', function () {
+            location.hash  = '#AliceChatBox_Facebook';
             fb_play_btn();
         });
         // ==========================  loging 頁面的peter json動畫  =============================
