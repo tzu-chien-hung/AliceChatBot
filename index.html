@@ -37,17 +37,23 @@
             <div class="home_bg">
                 <div class="home_bg_both">
                     <a href="./page.html#AliceChatBox1" class="yt_link">
-                        <div class="yt_bg">
+                        <div class="yt_bg_color">
                             <div class="home_yt_img_color">
                                 <img src="./img/youtube_color_icon.png" alt="">
                             </div>
                         </div>
+                        <div class="yt_bg">
+
+                        </div>
                     </a>
                     <a href="./page.html#AliceChatBox2" class="fb_link">
-                        <div class="fb_bg">
+                        <div class="fb_bg_color">
                             <div class="home_fb_img_color">
                                 <img src="./img/facebook_color_icon.png" alt="">
                             </div>
+                        </div>
+                        <div class="fb_bg">
+
                         </div>
                     </a>
                 </div>
@@ -70,18 +76,18 @@
     <script>
 
         $('a.yt_link').hover(function () {
-            // $('div.yt_bg').addClass('yt_bg_loding_hover');
+            $('div.yt_bg').addClass('hover');
             $('div.home_yt_img').addClass('hover');
         }, function () {
-            // $('div.yt_bg').removeClass('yt_bg_loding_hover');
+            $('div.yt_bg').removeClass('hover');
             $('div.home_yt_img').removeClass('hover');
             
         });
         $('a.fb_link').hover(function () {
-            // $('div.fb_bg').addClass('fb_bg_loding_hover');
+            $('div.fb_bg').addClass('hover');
             $('div.home_fb_img').addClass('hover');
         }, function () {
-            // $('div.fb_bg').removeClass('fb_bg_loding_hover');
+            $('div.fb_bg').removeClass('hover');
             $('div.home_fb_img').removeClass('hover');
         });
     </script>
