@@ -50,9 +50,12 @@
         </div>
     </div>
     <script>
-        var image = new Image();
-        image.src = './img/laptop/youtube_color_bg2.png';
-        image.src = './img/laptop/facebook_color_bg2.png';
+        $('.yt_bg').load(function () {
+            console.log($(this).width());
+        });
+        $('.fb_bg').load(function () {
+            console.log($(this).width());
+        });
     </script>
 
     <script>
