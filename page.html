@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALICE chatbox</title>
+    <title>ALICE chatbot</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.2/lottie.min.js"
         integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -427,7 +427,7 @@
         var url = location.hash;
         const url_container = document.getElementById('case_slider_all_container');
         const fb_message_container = document.getElementById('fb-root');
-        if (url === '#AliceChatBox_Facebook') {
+        if (url === '#AliceChatBot_Facebook') {
             url_container.style.position = 'relative';
             url_container.style.right = '50%';
             fb_message_container.style.display = 'none';
@@ -484,10 +484,10 @@
             }, 8000);
         };
 
-        if (url === '#AliceChatBox_Facebook') {
+        if (url === '#AliceChatBot_Facebook') {
             fb_play_btn();
         };
-        if (url === '#AliceChatBox_Youtube') {
+        if (url === '#AliceChatBot_Youtube') {
             yt_play_btn();
             fb_message_delay();
         };
@@ -495,12 +495,12 @@
         const fb_arrow_left = document.getElementById('slider_arrow_left');
         const yt_arrow_right = document.getElementById('slider_arrow_right');
         fb_arrow_left.addEventListener('click', function () {
-            location.hash = '#AliceChatBox_Youtube';
+            location.hash = '#AliceChatBot_Youtube';
             yt_play_btn();
             fb_message_delay();
         });
         yt_arrow_right.addEventListener('click', function () {
-            location.hash = '#AliceChatBox_Facebook';
+            location.hash = '#AliceChatBot_Facebook';
             fb_play_btn();
         });
         // ==========================  loging 頁面的peter json動畫  =============================
