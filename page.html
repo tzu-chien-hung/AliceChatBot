@@ -432,6 +432,17 @@
             url_container.style.right = '50%';
             fb_message_container.style.display = 'none';
         }
+        // ==============  yt -> fb message 延後顯示===============
+        function fb_message_delay() {
+            $("#yt_loding_close_btn").click(function () {
+                setTimeout(function () {
+                    $(".fb_message").css('display', 'flex');
+                }, 2000);
+            });
+            setTimeout(function () {
+                $(".fb_message").css('display', 'flex');
+            }, 9000);
+        }
         function fb_play_btn() {
             setTimeout(function () {
                 $("div.fb_loding_peter_div").fadeIn(1000);
@@ -478,6 +489,7 @@
         };
         if (url === '#AliceChatBox_Youtube') {
             yt_play_btn();
+            fb_message_delay();
         };
 
         const fb_arrow_left = document.getElementById('slider_arrow_left');
@@ -485,9 +497,10 @@
         fb_arrow_left.addEventListener('click', function () {
             location.hash = '#AliceChatBox_Youtube';
             yt_play_btn();
+            fb_message_delay();
         });
         yt_arrow_right.addEventListener('click', function () {
-            location.hash  = '#AliceChatBox_Facebook';
+            location.hash = '#AliceChatBox_Facebook';
             fb_play_btn();
         });
         // ==========================  loging 頁面的peter json動畫  =============================
@@ -511,19 +524,7 @@
             $(".yt_hint_box_1").css('display', 'none');
             $(".yt_hint_box_2").css('display', 'flex');
         });
-        // $("._a2zk").click(function () {
-        //     $(".yt_hint_box_1").css('display', 'none');
-        //     $(".yt_hint_box_2").css('display', 'flex');
-        // });
-        // ==============  yt -> fb message 延後顯示===============
-        $("#yt_loding_close_btn").click(function () {
-            setTimeout(function () {
-                $(".fb_message").css('display', 'flex');
-            }, 2000);
-        });
-        setTimeout(function () {
-            $(".fb_message").css('display', 'flex');
-        }, 9000);
+
         $(".yt_aside").click(function () {
             window.location.href = "./index.html";
         });
