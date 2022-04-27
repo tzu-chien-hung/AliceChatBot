@@ -439,9 +439,6 @@
                     $(".fb_message").css('display', 'flex');
                 }, 1000);
             });
-            setTimeout(function () {
-                $(".fb_message").css('display', 'flex');
-            }, 9000);
         }
         function fb_play_btn() {
             setTimeout(function () {
@@ -451,18 +448,18 @@
                 $("div.loding_tab_btn_fb").fadeIn(1000);
                 $("div.loding_tab_btn_fb").css('display', 'flex');
             }, 2000);
-            setTimeout(function () {
-                $("div.fb_loding").fadeOut(1000);
-            }, 7000);
+            // setTimeout(function () {
+            //     $("div.fb_loding").fadeOut(1000);
+            // }, 7000);
             // ==============  fb淡入 ===============
             $("#fb_loding_close_btn").click(function () {
                 $(".fb_pop_box_bg1").fadeIn(1000);
                 $(".fb_pop_box_bg1").css('display', 'flex');
             });
-            setTimeout(function () {
-                $(".fb_pop_box_bg1").fadeIn(1000);
-                $(".fb_pop_box_bg1").css('display', 'flex');
-            }, 8000);
+            // setTimeout(function () {
+            //     $(".fb_pop_box_bg1").fadeIn(1000);
+            //     $(".fb_pop_box_bg1").css('display', 'flex');
+            // }, 8000);
         };
         function yt_play_btn() {
             setTimeout(function () {
@@ -472,16 +469,16 @@
                 $("div.loding_tab_btn_yt").fadeIn(1000);
                 $("div.loding_tab_btn_yt").css('display', 'flex');
             }, 2000);
-            setTimeout(function () {
-                $("div.yt_loding").fadeOut(1000);
-            }, 7000);
+            // setTimeout(function () {
+            //     $("div.yt_loding").fadeOut(1000);
+            // }, 7000);
             // ==============  yt閃爍動畫  ===============
             $("#yt_loding_close_btn").click(function () {
                 $(".yt_hint_box_1").addClass('animate__flash');
             });
-            setTimeout(function () {
-                $(".yt_hint_box_1").addClass('animate__flash');
-            }, 8000);
+            // setTimeout(function () {
+            //     $(".yt_hint_box_1").addClass('animate__flash');
+            // }, 8000);
         };
 
         if (url === '#AliceChatBot_Facebook') {
@@ -580,7 +577,7 @@
         });
         // ============= 第三個 下一步 ==================
         $(".fb_pop_box_btn3").click(function () {
-            window.location.href = "https://www.facebook.com/TrendBuyChannel/";
+            window.open("https://www.facebook.com/TrendBuyChannel/");
         });
     </script>
     <script>
