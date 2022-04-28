@@ -280,7 +280,12 @@
   letter-spacing: 0.03em;
 }
 
-
+@media (max-width: 1660.98px) {
+  .yt_hint_box_content_2 {
+    display: inline-block;
+    width: 53%;
+  }
+}
 
 
 @media (max-width: 1440.98px) {
