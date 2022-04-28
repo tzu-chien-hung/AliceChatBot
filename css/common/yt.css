@@ -598,12 +598,14 @@
   }
 
   .yt_pop_box_btn {
-    width: 150px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 14px;
   }
 
-  .yt_pop_box_btn {
-    /* margin-left: 125px; */
-  }
 }
 
 
