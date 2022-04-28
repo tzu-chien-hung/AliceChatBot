@@ -62,6 +62,7 @@ body {
   background-image: url("../img/alice_facebook.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 .loding_peter_btn {
