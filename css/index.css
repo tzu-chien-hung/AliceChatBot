@@ -412,10 +412,12 @@ body {
 
     .fb_bg_color {
         width: 53.7%;
+        /* background-image: url(../img/laptop/facebook_color_bg2.png); */
     }
 
     .yt_bg_color {
         width: 53.7%;
+        /* background-image: url(../img/laptop/youtube_color_bg2.png); */
     }
 
     .home_peter_img {
