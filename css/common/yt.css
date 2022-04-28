@@ -134,10 +134,12 @@
   align-items: center;
   letter-spacing: 0.03em;
 }
-.yt_hint_box_content_word{
+
+.yt_hint_box_content_word {
   display: flex;
   align-items: center;
 }
+
 .yt_hint_box_content_2 {}
 
 .yt_hint_box_content_img_div {
@@ -362,202 +364,222 @@
 
   .yt_hint_box_content {
     font-size: 18px;
-    display: block;
   }
-  .yt_hint_box_content_2{
+
+  .yt_hint_box_content_2 {
     width: 45%;
   }
+
   .yt_hint_box_content_img_div {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
-    margin-right: 12px;
+    margin-left: 5px;
+    margin-right: 0px;
   }
-  .yt_pop_box_btn{
-    width: 130px;
+
+  .yt_pop_box_btn {
+    width: 120px;
     height: 40px;
     line-height: 35px;
-    margin-left: 0px;
-    margin-top: 10px;
+    margin-left: 11px;
+    margin-top: 0px;
     font-size: 18px;
   }
-}
 
-@media (max-width: 1199.98px) {
-  .yt_loding_peter_div {
-    width: 400px;
-    height: 228.36px;
-    top: 80px;
-  }
+  @media (max-width: 1199.98px) {
+    .yt_loding_peter_div {
+      width: 400px;
+      height: 228.36px;
+      top: 80px;
+    }
 
-  .yt_loding_peter_txt {
-    width: 400px;
-    height: 35px;
-    line-height: 32px;
-    font-size: 24px;
-  }
+    .yt_loding_peter_txt {
+      width: 400px;
+      height: 35px;
+      line-height: 32px;
+      font-size: 24px;
+    }
 
-  .yt_aside {
-    width: 120px;
-    margin-top: 15px;
-    margin-left: 15px;
-  }
+    .yt_aside {
+      width: 120px;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
 
-  .yt_aside_img {
-    width: 120px;
-  }
+    .yt_aside_img {
+      width: 120px;
+    }
 
-  .yt_aside_title {
-    font-size: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+    .yt_aside_title {
+      font-size: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
 
-  .yt_aside_title_img_div {
-    padding: 0px 0px 0px 15px;
-    width: 85px;
-    height: 30px;
-  }
+    .yt_aside_title_img_div {
+      padding: 0px 0px 0px 15px;
+      width: 85px;
+      height: 30px;
+    }
 
-  .yt_aside_title_span {
-    height: 25px;
-    padding: 0px;
-    margin: 0 auto;
-    text-align: center;
-  }
+    .yt_aside_title_span {
+      height: 25px;
+      padding: 0px;
+      margin: 0 auto;
+      text-align: center;
+    }
 
-  .yt_main {
-    width: calc(100vw - 215px);
-  }
+    .yt_main {
+      width: calc(100vw - 215px);
+    }
 
-  .YouTube_block_bg {
-    width: 700px;
-    height: 507px;
-    margin: 15px auto 0px auto;
-    background: #ffffff;
-    border-radius: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
+    .YouTube_block_bg {
+      width: 700px;
+      height: 507px;
+      margin: 15px auto 0px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 
-  .YouTube_block {
-    width: 661px;
-    height: 405px;
-    padding: 25px 20px 10px 20px;
-  }
+    .YouTube_block {
+      width: 661px;
+      height: 405px;
+      padding: 25px 20px 10px 20px;
+    }
 
-  .YouTube_block_txt {
-    font-size: 18.5px;
-    padding: 0px 22px 10px 22px;
-  }
+    .YouTube_block_txt {
+      font-size: 18.5px;
+      padding: 0px 22px 10px 22px;
+    }
 
-  .yt_hint_img_div {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    margin-right: 20px;
-  }
+    .yt_hint_img_div {
+      width: 50px;
+      height: 50px;
+      margin-left: 15px;
+      margin-right: 20px;
+    }
 
-  .yt_hint_box {
-    width: 700px;
-    margin-top: 20px;
-  }
+    .yt_hint_box {
+      width: 700px;
+      margin-top: 20px;
+    }
 
-  .yt_hint_box_content {
-    font-size: 18px;
-  }
-}
+    .yt_hint_box_content {
+      font-size: 18px;
+      display: block;
+    }
 
-@media (max-width: 960.98px) {
-  .yt_loding_peter_div {
-    width: 350px;
-    height: 199.82px;
-  }
-  .yt_loding_peter_txt {
-    width: 350px;
-    height: 20px;
-    line-height: 28px;
-    font-size: 21px;
-  }
-  .yt_peter_head_div {
-    width: 160px;
-  }
-  .yt_aside_video {
-    display: block;
+    .yt_hint_box_content_2 {
+      width: 43%;
+    }
+
+    .yt_pop_box_btn {
+      width: 130px;
+      height: 40px;
+      line-height: 35px;
+      margin-left: 0px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
   }
 
-  .yt_aside {
-    display: flex;
-    width: 400px;
-    height: 70px;
+  @media (max-width: 960.98px) {
+    .yt_loding_peter_div {
+      width: 350px;
+      height: 199.82px;
+    }
+
+    .yt_loding_peter_txt {
+      width: 350px;
+      height: 20px;
+      line-height: 28px;
+      font-size: 21px;
+    }
+
+    .yt_peter_head_div {
+      width: 160px;
+    }
+
+    .yt_aside_video {
+      display: block;
+    }
+
+    .yt_aside {
+      display: flex;
+      width: 400px;
+      height: 70px;
+    }
+
+    .yt_aside_img {
+      width: 130px;
+      margin: 0;
+    }
+
+    .yt_aside_title {
+      flex-wrap: nowrap;
+      height: 50px;
+    }
+
+    .yt_aside_title_img_div {
+      padding: 0px 5px 0px 15px;
+      width: 100px;
+      height: 63px;
+      display: flex;
+      align-items: center;
+    }
+
+    .yt_aside_title_span {
+      height: 67px;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+    }
+
+    .YouTube_block_bg {
+      width: 600px;
+      height: 435px;
+    }
+
+    .yt_main {
+      width: calc(100vw - 80px);
+    }
+
+    .YouTube_block {
+      width: 567px;
+      height: 348px;
+      padding: 16px 16px 8px 16px;
+    }
+
+    .YouTube_block_txt {
+      font-size: 16px;
+      padding: 0px 16px 10px 16px;
+    }
+
+    .yt_hint_img_div {
+      width: 50px;
+      height: 50px;
+      margin-left: 15px;
+      margin-right: 20px;
+    }
+
+    .yt_hint_box {
+      width: 650px;
+      margin-top: 20px;
+    }
+
+    .yt_hint_box_content {
+      font-size: 17px;
+    }
+
+    .yt_pop_box_btn {
+      width: 150px;
+    }
+
+    .yt_pop_box_btn {
+      margin-left: 125px;
+    }
   }
 
-  .yt_aside_img {
-    width: 130px;
-    margin: 0;
-  }
 
-  .yt_aside_title {
-    flex-wrap: nowrap;
-    height: 50px;
-  }
-
-  .yt_aside_title_img_div {
-    padding: 0px 5px 0px 15px;
-    width: 100px;
-    height: 63px;
-    display: flex;
-    align-items: center;
-  }
-
-  .yt_aside_title_span {
-    height: 67px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-  }
-
-  .YouTube_block_bg {
-    width: 600px;
-    height: 435px;
-  }
-
-  .yt_main {
-    width: calc(100vw - 80px);
-  }
-
-  .YouTube_block {
-    width: 567px;
-    height: 348px;
-    padding: 16px 16px 8px 16px;
-  }
-
-  .YouTube_block_txt {
-    font-size: 16px;
-    padding: 0px 16px 10px 16px;
-  }
-
-  .yt_hint_img_div {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    margin-right: 20px;
-  }
-
-  .yt_hint_box {
-    width: 650px;
-    margin-top: 20px;
-  }
-
-  .yt_hint_box_content {
-    font-size: 17px;
-  }
-  .yt_pop_box_btn{
-    width: 150px;
-  }
-  .yt_pop_box_btn{
-    margin-left: 125px;
-  }
-}
-
-
-/* @media (max-width: 768.98px) {} */
+  /* @media (max-width: 768.98px) {} */
