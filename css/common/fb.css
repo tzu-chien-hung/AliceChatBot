@@ -498,12 +498,15 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.fb_pop_box_big_bg2{
+
+.fb_pop_box_big_bg2 {
   display: none;
 }
-.fb_pop_box_big_bg3{
+
+.fb_pop_box_big_bg3 {
   display: none;
 }
+
 .fb_pop_box_bg {
   margin: 620px auto 0px;
   width: 700px;
@@ -566,9 +569,11 @@
 .fb_pop_box_bg2 {
   display: none;
 }
+
 .fb_pop_box_bg3 {
   display: none;
 }
+
 .fb_pop_box_img2 {
   padding: 0 20px 0 10px;
 }
@@ -588,6 +593,7 @@
   margin-top: 25px;
   position: absolute;
   right: 34px;
+  height: 100%;
 }
 
 .fb_aside_img {
@@ -620,6 +626,16 @@
 .fb_aside_title_span {
   height: 25px;
   padding: 8px 10px;
+}
+
+.loding_alice_facebook_pic {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+}
+
+.loding_alice_facebook_pic img {
+  width: 100%;
 }
 
 .fb_loding {
@@ -666,13 +682,15 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.fb_content_l_bottom_3_img{
+
+.fb_content_l_bottom_3_img {
   position: absolute;
   width: 300px;
   height: 410px;
   right: 10px;
   bottom: -410px;
 }
+
 .fb_content_l_bottom_3_gif2 {
   position: absolute;
   width: 300px;
@@ -688,6 +706,7 @@
     /* width: 700px;
     height: 100px; */
   }
+
   .fb_loding_peter_div {
     width: 460px;
     height: 262.6px;
@@ -741,6 +760,10 @@
     /* margin: 10px 15% 0px; */
     /* display: flex; */
     justify-content: space-between;
+  }
+
+  .loding_alice_facebook_pic {
+    width: 190px;
   }
 }
 
@@ -847,11 +870,16 @@
   .fb_content_r_about {
     margin-bottom: 10px;
   }
+
 }
 
 @media (max-width: 1099.98px) {
   .fb_loding_peter_div {
     left: 6%;
+  }
+
+  .loding_alice_facebook_pic {
+    width: 160px;
   }
 }
 
@@ -861,9 +889,11 @@
     width: 665px;
     height: 100px;
   }
-  .fb_pop_box_btn{
+
+  .fb_pop_box_btn {
     width: 150px;
   }
+
   .fb_loding_peter_div {
     width: 350px;
     height: 199.82px;
@@ -877,7 +907,7 @@
   }
 
   .fb_peter_head_div {
-    width: 320px;
+    width: 310px;
   }
 
   .fb_nav_1_search_bar {
@@ -981,6 +1011,11 @@
 
   .fb_content_l_bottom_2 {
     width: 400px;
+  }
+
+  .loding_alice_facebook_pic {
+    width: 120px;
+    right: -25px;
   }
 
   /* .fb_content_l_bottom_3_content_icon2 {

@@ -202,6 +202,7 @@
   margin-top: 25px;
   position: absolute;
   left: 34px;
+  height: 100%;
 }
 
 .yt_loding_aside_img {
@@ -234,7 +235,13 @@
   height: 25px;
   padding: 8px 10px;
 }
-
+.loding_alice_youtube_pic{
+  position: absolute;
+  bottom: 5%;
+}
+.loding_alice_youtube_pic img {
+  width: 100%;
+}
 .yt_loding {
   /* position: absolute;
   top: 0;
@@ -390,6 +397,9 @@
     margin-top: 0px;
     font-size: 18px;
   }
+  .loding_alice_youtube_pic {
+    width: 190px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -506,7 +516,9 @@
     margin-left: 15px;
     margin-right: 15px;
   }
-
+  .loding_alice_youtube_pic {
+    width: 160px;
+  }
 }
 
 @media (max-width: 960.98px) {
@@ -610,7 +622,9 @@
     margin-top: 10px;
     font-size: 14px;
   }
-
+  .loding_alice_youtube_pic {
+    width: 120px;
+  }
 }
 
 
